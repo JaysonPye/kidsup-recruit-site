@@ -131,7 +131,7 @@ include __DIR__ . '/includes/header.php';
         <div id="apply-error-box" class="apply-error" hidden></div>
 
         <div class="apply-actions">
-          <button id="apply-submit-button" type="submit" class="apply-submit" disabled>応募する / Submit</button>
+          <button id="apply-submit-button" type="submit" class="apply-submit">応募する / Submit</button>
         </div>
       </form>
 

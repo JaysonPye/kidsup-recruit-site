@@ -122,7 +122,7 @@
 
   function setLoading(loading) {
     form.classList.toggle('is-loading', loading);
-    submitButton.disabled = loading || !roleSelect.value;
+    submitButton.disabled = loading;
     submitButton.textContent = loading ? '送信中...' : '応募する / Submit';
   }
 
@@ -144,12 +144,31 @@
     });
   }
 
+  function focusAndScrollToField(field) {
+    if (!field || typeof field.focus !== 'function') {
+      return;
+    }
+
+    field.focus({ preventScroll: true });
+
+    var header = document.querySelector('.ku-header');
+    var headerHeight = header ? header.offsetHeight : 0;
+    var targetTop = window.pageYOffset + field.getBoundingClientRect().top - headerHeight - 20;
+    if (targetTop < 0) {
+      targetTop = 0;
+    }
+
+    window.scrollTo({
+      top: targetTop,
+      behavior: 'smooth'
+    });
+  }
+
   function updateFormForRole() {
     var role = roleSelect.value;
     var isNative = role === 'native';
     form.classList.toggle('is-native', isNative);
     setNativeMode(isNative);
-    submitButton.disabled = !role;
   }
 
   var trackedParams = getTrackingParams();
@@ -188,10 +207,12 @@
 
     if (!roleSelect.value) {
       setError(['希望職種を選択してください。']);
+      focusAndScrollToField(roleSelect);
       return;
     }
 
     if (!form.reportValidity()) {
+      focusAndScrollToField(form.querySelector(':invalid'));
       return;
     }
 
