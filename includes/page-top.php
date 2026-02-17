@@ -15,7 +15,7 @@ if (!isset($page_top_cta_label)) {
   $page_top_cta_label = '応募はこちら';
 }
 if (!isset($page_top_cta_href)) {
-  $page_top_cta_href = '#';
+  $page_top_cta_href = $apply_cta_href ?? 'apply.php';
 }
 if (!isset($page_top_alt)) {
   $page_top_alt = $page_title ?? 'Kids Up Recruit';

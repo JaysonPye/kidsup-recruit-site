@@ -100,4 +100,162 @@ include __DIR__ . '/includes/header.php';
     </div>
   </div>
 </section>
+<section class="ku-section ku-section--blue interview-section">
+  <div class="ku-section__inner">
+    <header class="about-header interview-header">
+      <div class="ku-section-heading ku-section-heading--image ku-section-heading--white">
+        <img class="ku-section-heading__image" src="images/Interview.png" alt="Interview">
+        <p class="ku-section-heading__subtitle">社員の声</p>
+        <span class="ku-section-heading__line" aria-hidden="true"></span>
+      </div>
+    </header>
+    <div class="interview-grid">
+      <div class="interview-panel interview-panel--text interview-panel--n1">
+        <p class="interview-panel__quote">子どもだけでなく、グローバルな環境でチームの成長にも貢献できることにやりがいを感じます！</p>
+      </div>
+      <div class="interview-panel interview-panel--image interview-panel--n2">
+        <img class="interview-panel__photo" src="images/interview-1.jpg" alt="バイリンガルエデュケーターの写真">
+        <img class="interview-panel__arrow interview-panel__arrow--bottom" src="images/interview-arrow.png" alt="" aria-hidden="true">
+        <div class="interview-panel__overlay">
+          <span class="interview-panel__role">バイリンガルエデュケーター</span>
+          <span class="interview-panel__meta">20--年入社</span>
+          <span class="interview-panel__name">お名前</span>
+        </div>
+      </div>
+      <div class="interview-panel interview-panel--text interview-panel--n3">
+        <p class="interview-panel__quote">Seeing children having fun while learning is the best!</p>
+      </div>
+      <div class="interview-panel interview-panel--image interview-panel--n4">
+        <img class="interview-panel__photo" src="images/interview-2.jpg" alt="スクールマネージャーの写真">
+        <img class="interview-panel__arrow interview-panel__arrow--top interview-panel__arrow--flip" src="images/interview-arrow.png" alt="" aria-hidden="true">
+        <div class="interview-panel__overlay">
+          <span class="interview-panel__role">スクールマネージャー</span>
+          <span class="interview-panel__meta">20--年入社</span>
+          <span class="interview-panel__name">お名前</span>
+        </div>
+      </div>
+      <div class="interview-panel interview-panel--text interview-panel--n5">
+        <p class="interview-panel__quote">たくさんの経験を通して子どもたちの「できた！」を育て、間近で成長を実感できます！</p>
+      </div>
+      <div class="interview-panel interview-panel--image interview-panel--n6">
+        <img class="interview-panel__photo" src="images/interview-3.jpg" alt="ネイティブ英語教師の写真">
+        <img class="interview-panel__arrow interview-panel__arrow--top interview-panel__arrow--flip" src="images/interview-arrow.png" alt="" aria-hidden="true">
+        <div class="interview-panel__overlay">
+          <span class="interview-panel__role">ネイティブ英語教師</span>
+          <span class="interview-panel__meta">20--年入社</span>
+          <span class="interview-panel__name">お名前</span>
+        </div>
+      </div>
+      <div class="interview-panel interview-panel--text interview-panel--n7">
+        <p class="interview-panel__quote">安全運転で、子どもたちの一日を支える大切な役割です。</p>
+      </div>
+      <div class="interview-panel interview-panel--image interview-panel--n8">
+        <img class="interview-panel__photo" src="images/interview-4.jpg" alt="送迎バス搭乗員の写真">
+        <img class="interview-panel__arrow interview-panel__arrow--bottom" src="images/interview-arrow.png" alt="" aria-hidden="true">
+        <div class="interview-panel__overlay">
+          <span class="interview-panel__role">送迎バス搭乗員</span>
+          <span class="interview-panel__meta">20--年入社</span>
+          <span class="interview-panel__name">お名前</span>
+        </div>
+      </div>
+      <div class="interview-panel interview-panel--text interview-panel--n9">
+        <p class="interview-panel__quote">グローバルな環境で、子どもたちと一緒に自分自身も大きく成長できます！</p>
+      </div>
+      <div class="interview-panel interview-panel--image interview-panel--n10">
+        <img class="interview-panel__photo" src="images/interview-5.jpg" alt="送迎バスドライバーの写真">
+        <img class="interview-panel__arrow interview-panel__arrow--top interview-panel__arrow--flip" src="images/interview-arrow.png" alt="" aria-hidden="true">
+        <div class="interview-panel__overlay">
+          <span class="interview-panel__role">送迎バスドライバー</span>
+          <span class="interview-panel__meta">20--年入社</span>
+          <span class="interview-panel__name">お名前</span>
+        </div>
+      </div>
+      <div class="interview-panel interview-panel--text interview-panel--n11">
+        <p class="interview-panel__quote">子どもたちの笑顔に元気をもらえる、毎日がやりがいのある仕事です。</p>
+      </div>
+      <div class="interview-panel interview-panel--image interview-panel--n12">
+        <img class="interview-panel__photo" src="images/interview-6.jpg" alt="新卒新入社員の写真">
+        <img class="interview-panel__arrow interview-panel__arrow--top interview-panel__arrow--flip" src="images/interview-arrow.png" alt="" aria-hidden="true">
+        <div class="interview-panel__overlay">
+          <span class="interview-panel__role">新卒新入社員</span>
+          <span class="interview-panel__meta">20--年入社</span>
+          <span class="interview-panel__name">お名前</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="ku-section ku-section--white recruit-section">
+  <div class="ku-section__inner">
+    <header class="about-header recruit-header">
+      <div class="ku-section-heading ku-section-heading--image ku-section-heading--orange">
+        <img class="ku-section-heading__image" src="images/recruit.png" alt="Recruit">
+        <p class="ku-section-heading__subtitle">募集職種</p>
+        <span class="ku-section-heading__line" aria-hidden="true"></span>
+      </div>
+    </header>
+    <div class="recruit-grid">
+      <article class="recruit-card">
+        <div class="recruit-card__media">
+          <img src="images/recruit-01.jpg" alt="スクールマネージャーの写真">
+        </div>
+        <div class="recruit-card__body">
+          <h3 class="recruit-card__title">スクールマネージャー</h3>
+          <p class="recruit-card__text">スクール全体をリードする運営の中心ポジション。スタッフマネジメントと保護者対応を通じて、より良いスクールづくりを実現します。教育とチーム運営の両方に挑戦したい方に最適です。</p>
+          <a class="recruit-card__more" href="apply.php">view more</a>
+        </div>
+      </article>
+      <article class="recruit-card">
+        <div class="recruit-card__media">
+          <img src="images/recruit-02.jpg" alt="バイリンガルティーチャーの写真">
+        </div>
+        <div class="recruit-card__body">
+          <h3 class="recruit-card__title">バイリンガルティーチャー</h3>
+          <p class="recruit-card__text">英語×教育で子どもたちの成長をサポートする仕事。レッスンや日々のコミュニケーションを通して「英語って楽しい」を引き出します。未経験でも大丈夫！研修があり、英語力と指導力を伸ばせる環境です。</p>
+          <a class="recruit-card__more" href="apply.php">view more</a>
+        </div>
+      </article>
+      <article class="recruit-card">
+        <div class="recruit-card__media">
+          <img src="images/recruit-03.jpg" alt="ネイティブ英語教師の写真">
+        </div>
+        <div class="recruit-card__body">
+          <h3 class="recruit-card__title">ネイティブ英語教師</h3>
+          <p class="recruit-card__text">Deliver fun and engaging English lessons in a fully immersive environment. You will help children build confidence and improve their English skills through activities and games. Ideal for those who want to work in an international, dynamic educational setting.</p>
+          <a class="recruit-card__more" href="apply.php">view more</a>
+        </div>
+      </article>
+      <article class="recruit-card">
+        <div class="recruit-card__media">
+          <img src="images/recruit-04.jpg" alt="送迎バスドライバーの写真">
+        </div>
+        <div class="recruit-card__body">
+          <h3 class="recruit-card__title">送迎バスドライバー</h3>
+          <p class="recruit-card__text">安全な送迎で、子どもたちの学びを支える重要な役割。普通自動車免許で運転でき、子どもたちの笑顔に触れられる温かいお仕事です。</p>
+          <a class="recruit-card__more" href="apply.php">view more</a>
+        </div>
+      </article>
+      <article class="recruit-card">
+        <div class="recruit-card__media">
+          <img src="images/recruit-05.jpg" alt="送迎バス搭乗員の写真">
+        </div>
+        <div class="recruit-card__body">
+          <h3 class="recruit-card__title">送迎バス搭乗員</h3>
+          <p class="recruit-card__text">送迎バスで子どもたちと関わり、安心・安全をサポートするお仕事。乗降補助や車内コミュニケーションを通して、子どもたちと楽しい時間を過ごせます。子どもが好きな方に最適です。</p>
+          <a class="recruit-card__more" href="apply.php">view more</a>
+        </div>
+      </article>
+      <article class="recruit-card">
+        <div class="recruit-card__media">
+          <img src="images/recruit-06.jpg" alt="新卒入社社員の写真">
+        </div>
+        <div class="recruit-card__body">
+          <h3 class="recruit-card__title">新卒入社社員</h3>
+          <p class="recruit-card__text">安心の研修制度があり、教育やスクール運営に挑戦できるポジションです。年齢・性別を問わずキャリアアップ可能で、アシスタントスクールマネージャーやバイリンガルティーチャーとして経験を積み、将来的にはスクールマネージャーやトレーナー、その他本部スタッフへの道も開けます。</p>
+          <a class="recruit-card__more" href="apply.php">view more</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 <?php include __DIR__ . '/includes/footer.php'; ?>
