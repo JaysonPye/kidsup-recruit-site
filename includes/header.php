@@ -8,6 +8,12 @@ if (!isset($body_class)) {
 if (!isset($body_id)) {
   $body_id = basename($_SERVER['SCRIPT_NAME'] ?? 'page', '.php');
 }
+if (!isset($apply_cta_href)) {
+  $apply_cta_href = 'apply.php';
+}
+if (!isset($apply_cta_aria_label)) {
+  $apply_cta_aria_label = '応募フォームへ';
+}
 if (!isset($post) || !is_object($post)) {
   $post = (object) ['post_name' => $body_id];
 }
@@ -177,7 +183,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</li>
 						<li><a href="graduates.php">新卒</a></li>
 						<li><a href="index.php">メインページ</a></li>
-						<li><a class="ku-cta" href="#" aria-label="応募フォーム準備中">応募はこちら</a></li>
+						<li><a class="ku-cta" href="<?php echo esc_url($apply_cta_href); ?>" aria-label="<?php echo esc_attr($apply_cta_aria_label); ?>">応募はこちら</a></li>
 					</ul>
 				</nav>
 			</div>
