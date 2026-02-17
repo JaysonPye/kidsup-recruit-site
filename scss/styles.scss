@@ -1355,6 +1355,7 @@ body.nav-open {
 .apply-page {
   padding: 42px 0 72px;
   background: #f6fbff;
+  scroll-margin-top: calc(var(--ku-header-height) + 16px);
 }
 
 .apply-page__inner {

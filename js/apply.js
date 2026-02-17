@@ -10,6 +10,7 @@
   var successBox = document.getElementById('apply-success-box');
   var trackingSlugInput = document.getElementById('tracking-link-slug');
   var nativeOnlyRows = form.querySelectorAll('.js-native-only');
+  var applySection = document.getElementById('apply-form');
 
   var API_ENDPOINT = form.dataset.apiEndpoint || '/api/recruit_applications';
   var PRIVACY_POLICY_URL = form.dataset.privacyPolicyUrl || 'https://www.p-up.world/privacypolicy/';
@@ -125,6 +126,24 @@
     submitButton.textContent = loading ? '送信中...' : '応募する / Submit';
   }
 
+  function scrollToApplyForm(behavior) {
+    if (!applySection) {
+      return;
+    }
+
+    var header = document.querySelector('.ku-header');
+    var headerHeight = header ? header.offsetHeight : 0;
+    var targetTop = window.pageYOffset + applySection.getBoundingClientRect().top - headerHeight - 16;
+    if (targetTop < 0) {
+      targetTop = 0;
+    }
+
+    window.scrollTo({
+      top: targetTop,
+      behavior: behavior || 'smooth'
+    });
+  }
+
   function updateFormForRole() {
     var role = roleSelect.value;
     var isNative = role === 'native';
@@ -149,6 +168,19 @@
   roleSelect.addEventListener('change', function() {
     updateFormForRole();
   });
+
+  document.querySelectorAll('a[href="#apply-form"]').forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      scrollToApplyForm('smooth');
+    });
+  });
+
+  if (window.location.hash === '#apply-form') {
+    window.requestAnimationFrame(function() {
+      scrollToApplyForm('smooth');
+    });
+  }
 
   form.addEventListener('submit', async function(event) {
     event.preventDefault();
