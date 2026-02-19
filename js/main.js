@@ -131,3 +131,40 @@ $(function() {
 		}
 	});
 });
+
+$(function() {
+	var $schedule = $('.js-sm-schedule');
+	if (!$schedule.length) {
+		return;
+	}
+
+	$schedule.each(function() {
+		var $wrap = $(this);
+		var $toggle = $wrap.find('.js-sm-schedule-toggle');
+		var $panel = $wrap.find('.js-sm-schedule-panel');
+
+		if (!$toggle.length || !$panel.length) {
+			return;
+		}
+
+		$panel.hide().attr('hidden', true);
+		$toggle.attr('aria-expanded', 'false');
+
+		$toggle.on('click', function() {
+			var isOpen = $wrap.hasClass('is-open');
+
+			if (isOpen) {
+				$wrap.removeClass('is-open');
+				$toggle.attr('aria-expanded', 'false');
+				$panel.stop(true, true).slideUp(260, function() {
+					$panel.attr('hidden', true);
+				});
+				return;
+			}
+
+			$wrap.addClass('is-open');
+			$toggle.attr('aria-expanded', 'true');
+			$panel.removeAttr('hidden').hide().stop(true, true).slideDown(300);
+		});
+	});
+});
