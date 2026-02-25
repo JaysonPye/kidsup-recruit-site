@@ -140,4 +140,76 @@ include __DIR__ . '/includes/header.php';
     </div>
   </div>
 </section>
+<section class="sm-hr-section" aria-labelledby="sm-hr-title">
+  <img class="sm-hr-section__deco" src="images/learn-with-fun.png" alt="" aria-hidden="true">
+  <div class="ku-section__inner">
+    <header class="sm-hr-section__header">
+      <div class="sm-hr-title-wrap">
+        <img class="sm-hr-title-wrap__bg" src="images/hr-required.png" alt="" aria-hidden="true">
+        <h2 id="sm-hr-title" class="sm-hr-title-wrap__label">
+          <span>求める人材</span>
+        </h2>
+      </div>
+    </header>
+    <?php
+    $sm_hr_items = [
+      [
+        'num' => '01',
+        'image' => 'images/hr_01.jpg',
+        'alt' => '子どもたちとスタッフの様子',
+        'html' => "子どもたちの成長に寄り添い<br>笑顔を生み出す仕事に<br>挑戦したい方",
+      ],
+      [
+        'num' => '02',
+        'image' => 'images/hr_02.jpg',
+        'alt' => '屋外で活動する子どもたちとスタッフの様子',
+        'html' => "英語を使いながら自分自身も<br>スキルアップしていきたい方<br><span class=\"sm-hr-item__note\">(英語力は不問です)</span>",
+      ],
+      [
+        'num' => '03',
+        'image' => 'images/hr_03.jpg',
+        'alt' => '教室で活動する子どもとスタッフの様子',
+        'html' => "チームで力を発揮し、教育の<br>現場づくりに主体的に<br>関わりたい方",
+      ],
+      [
+        'num' => '04',
+        'image' => 'images/hr_04.jpg',
+        'alt' => 'スタッフ集合写真',
+        'html' => "新しいことに前向きに取り組み、<br>自分の可能性を<br>拡げたい方",
+      ],
+      [
+        'num' => '05',
+        'image' => 'images/hr_05.jpg',
+        'alt' => '子どもとスタッフの学びの様子',
+        'html' => "子どもが好きでやる気があれば<br>未経験の方も大歓迎！<br><span class=\"sm-hr-item__nowrap\">研修でしっかりとサポートしていきます</span>",
+      ],
+    ];
+    ?>
+    <div class="sm-hr-list">
+      <?php foreach ($sm_hr_items as $index => $item): ?>
+        <?php
+        $is_image_right = ($index % 2) === 0;
+        $is_text_left = ($index % 2) === 0;
+        $num_asset_rel = 'images/hr' . $item['num'] . '.png';
+        $num_asset_path = __DIR__ . '/' . $num_asset_rel;
+        ?>
+        <article class="sm-hr-item sm-hr-item--n<?php echo htmlspecialchars($item['num'], ENT_QUOTES, 'UTF-8'); ?> <?php echo $is_image_right ? 'is-image-right' : 'is-image-left'; ?> <?php echo $is_text_left ? 'is-text-left' : 'is-text-right'; ?>">
+          <div class="sm-hr-item__copy">
+            <span class="sm-hr-item__num" aria-hidden="true">
+              <?php if (is_file($num_asset_path)): ?>
+                <img src="<?php echo htmlspecialchars($num_asset_rel, ENT_QUOTES, 'UTF-8'); ?>" alt="">
+              <?php else: ?>
+                <span class="sm-hr-item__num-fallback"><?php echo htmlspecialchars($item['num'], ENT_QUOTES, 'UTF-8'); ?></span>
+              <?php endif; ?>
+            </span>
+            <p class="sm-hr-item__text"><?php echo $item['html']; ?></p>
+          </div>
+          <div class="sm-hr-item__media">
+            <img src="<?php echo htmlspecialchars($item['image'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($item['alt'], ENT_QUOTES, 'UTF-8'); ?>">
+          </div>
+        </article>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
 <?php include __DIR__ . '/includes/footer.php'; ?>

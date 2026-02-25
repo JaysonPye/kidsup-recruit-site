@@ -2055,9 +2055,43 @@ body.nav-open {
     padding: 0 0 54px;
   }
 
+  .sm-schedule {
+    border: 0;
+    background: transparent;
+  }
+
+  .sm-schedule__title {
+    margin: 0 0 6px;
+  }
+
   .sm-schedule__toggle {
-    padding: 14px 16px;
+    width: min(292px, 100%);
+    border: 1px solid #f4811f;
+    border-radius: 999px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(57, 33, 11, 0.08);
+    justify-content: center;
+    gap: 18px;
+    padding: 16px 22px;
     font-size: clamp(1.08rem, 1.8vw + 0.72rem, 1.3rem);
+  }
+
+  .sm-schedule__arrow {
+    width: 12px;
+    height: 12px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    transform: translateY(-1px) rotate(45deg);
+  }
+
+  .sm-schedule.is-open .sm-schedule__arrow {
+    transform: translateY(1px) rotate(-135deg);
+  }
+
+  .sm-schedule__panel {
+    border: 1px solid #f4811f;
+    border-top-width: 1px;
+    background: #fff;
   }
 
   .sm-schedule__panel-inner {
