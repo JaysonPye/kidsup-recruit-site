@@ -63,7 +63,15 @@ include __DIR__ . '/includes/header.php';
 
           <div class="apply-field">
             <label for="apply-date-of-birth">生年月日 (Date of Birth) <span class="apply-required">※必須</span></label>
-            <input id="apply-date-of-birth" name="date_of_birth" type="date" required>
+            <input
+              id="apply-date-of-birth"
+              name="date_of_birth"
+              type="date"
+              min="0001-01-01"
+              max="9999-12-31"
+              maxlength="10"
+              required
+            >
           </div>
 
           <div class="apply-field apply-field--full">

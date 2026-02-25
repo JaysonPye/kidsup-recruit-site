@@ -5,6 +5,7 @@
   }
 
   var roleSelect = document.getElementById('apply-role');
+  var dateOfBirthInput = document.getElementById('apply-date-of-birth');
   var submitButton = document.getElementById('apply-submit-button');
   var errorBox = document.getElementById('apply-error-box');
   var successBox = document.getElementById('apply-success-box');
@@ -171,6 +172,24 @@
     setNativeMode(isNative);
   }
 
+  function hasFourDigitYearDate(value) {
+    if (!value) {
+      return true;
+    }
+
+    return /^\d{4}-\d{2}-\d{2}$/.test(value);
+  }
+
+  function validateDateOfBirthYear() {
+    if (!dateOfBirthInput) {
+      return true;
+    }
+
+    var isValid = hasFourDigitYearDate(dateOfBirthInput.value);
+    dateOfBirthInput.setCustomValidity(isValid ? '' : 'Year must be 4 digits.');
+    return isValid;
+  }
+
   var trackedParams = getTrackingParams();
   var selectedRole = trackedParams.role || deriveRoleFromSlug(trackedParams.trackingLinkSlug);
 
@@ -183,6 +202,12 @@
   }
 
   updateFormForRole();
+
+  if (dateOfBirthInput) {
+    dateOfBirthInput.addEventListener('input', validateDateOfBirthYear);
+    dateOfBirthInput.addEventListener('change', validateDateOfBirthYear);
+    validateDateOfBirthYear();
+  }
 
   roleSelect.addEventListener('change', function() {
     updateFormForRole();
@@ -210,6 +235,8 @@
       focusAndScrollToField(roleSelect);
       return;
     }
+
+    validateDateOfBirthYear();
 
     if (!form.reportValidity()) {
       focusAndScrollToField(form.querySelector(':invalid'));
