@@ -170,18 +170,6 @@ include __DIR__ . '/includes/header.php';
           <span class="interview-panel__name">お名前</span>
         </div>
       </div>
-      <div class="interview-panel interview-panel--text interview-panel--n11">
-        <p class="interview-panel__quote">子どもたちの笑顔に元気をもらえる、毎日がやりがいのある仕事です。</p>
-      </div>
-      <div class="interview-panel interview-panel--image interview-panel--n12">
-        <img class="interview-panel__photo" src="images/interview-6.jpg" alt="新卒新入社員の写真">
-        <img class="interview-panel__arrow interview-panel__arrow--top interview-panel__arrow--flip" src="images/interview-arrow.png" alt="" aria-hidden="true">
-        <div class="interview-panel__overlay">
-          <span class="interview-panel__role">新卒新入社員</span>
-          <span class="interview-panel__meta">20--年入社</span>
-          <span class="interview-panel__name">お名前</span>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -242,16 +230,6 @@ include __DIR__ . '/includes/header.php';
         <div class="recruit-card__body">
           <h3 class="recruit-card__title">送迎バス搭乗員</h3>
           <p class="recruit-card__text">送迎バスで子どもたちと関わり、安心・安全をサポートするお仕事。乗降補助や車内コミュニケーションを通して、子どもたちと楽しい時間を過ごせます。子どもが好きな方に最適です。</p>
-          <a class="recruit-card__more" href="apply.php">view more</a>
-        </div>
-      </article>
-      <article class="recruit-card">
-        <div class="recruit-card__media">
-          <img src="images/recruit-06.jpg" alt="新卒入社社員の写真">
-        </div>
-        <div class="recruit-card__body">
-          <h3 class="recruit-card__title">新卒入社社員</h3>
-          <p class="recruit-card__text">安心の研修制度があり、教育やスクール運営に挑戦できるポジションです。年齢・性別を問わずキャリアアップ可能で、アシスタントスクールマネージャーやバイリンガルティーチャーとして経験を積み、将来的にはスクールマネージャーやトレーナー、その他本部スタッフへの道も開けます。</p>
           <a class="recruit-card__more" href="apply.php">view more</a>
         </div>
       </article>
