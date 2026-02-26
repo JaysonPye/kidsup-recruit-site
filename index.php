@@ -89,7 +89,7 @@ include __DIR__ . '/includes/header.php';
             <img class="stats-header__image" src="images/02.png" alt="02">
             <div class="stats-header__text">
               <p class="stats-header__title">スクール数</p>
-              <p class="stats-header__meta">スクール数：36校（2025年11月時点）</p>
+              <p class="stats-header__meta">スクール数：37校（2025年11月時点）</p>
             </div>
           </div>
         </div>
@@ -188,7 +188,7 @@ include __DIR__ . '/includes/header.php';
           <img src="images/recruit-01.jpg" alt="スクールマネージャーの写真">
         </div>
         <div class="recruit-card__body">
-          <h3 class="recruit-card__title">スクールマネージャー</h3>
+          <h3 class="recruit-card__title">スクールマネージャー【新卒・中途】</h3>
           <p class="recruit-card__text">スクール全体をリードする運営の中心ポジション。スタッフマネジメントと保護者対応を通じて、より良いスクールづくりを実現します。教育とチーム運営の両方に挑戦したい方に最適です。</p>
           <a class="recruit-card__more" href="apply.php">view more</a>
         </div>
@@ -198,7 +198,7 @@ include __DIR__ . '/includes/header.php';
           <img src="images/recruit-02.jpg" alt="バイリンガルティーチャーの写真">
         </div>
         <div class="recruit-card__body">
-          <h3 class="recruit-card__title">バイリンガルティーチャー</h3>
+          <h3 class="recruit-card__title">バイリンガルティーチャー【新卒・中途】</h3>
           <p class="recruit-card__text">英語×教育で子どもたちの成長をサポートする仕事。レッスンや日々のコミュニケーションを通して「英語って楽しい」を引き出します。未経験でも大丈夫！研修があり、英語力と指導力を伸ばせる環境です。</p>
           <a class="recruit-card__more" href="apply.php">view more</a>
         </div>
@@ -208,7 +208,7 @@ include __DIR__ . '/includes/header.php';
           <img src="images/recruit-03.jpg" alt="ネイティブ英語教師の写真">
         </div>
         <div class="recruit-card__body">
-          <h3 class="recruit-card__title">ネイティブ英語教師</h3>
+          <h3 class="recruit-card__title">English Native Teacher</h3>
           <p class="recruit-card__text">Deliver fun and engaging English lessons in a fully immersive environment. You will help children build confidence and improve their English skills through activities and games. Ideal for those who want to work in an international, dynamic educational setting.</p>
           <a class="recruit-card__more" href="apply.php">view more</a>
         </div>

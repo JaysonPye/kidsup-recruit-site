@@ -168,3 +168,85 @@ $(function() {
 		});
 	});
 });
+
+$(function() {
+	var $faqItems = $('.js-sm-faq-item');
+	if (!$faqItems.length) {
+		return;
+	}
+
+	$faqItems.each(function() {
+		var $item = $(this);
+		var $toggle = $item.find('.js-sm-faq-toggle');
+		var $panel = $item.find('.js-sm-faq-panel');
+
+		if (!$toggle.length || !$panel.length) {
+			return;
+		}
+
+		var isOpen = $item.hasClass('is-open');
+		$toggle.attr('aria-expanded', isOpen ? 'true' : 'false');
+
+		if (isOpen) {
+			$panel.show().removeAttr('hidden');
+		} else {
+			$panel.hide().attr('hidden', true);
+		}
+
+		$toggle.on('click', function() {
+			var openNow = $item.hasClass('is-open');
+
+			if (openNow) {
+				$item.removeClass('is-open');
+				$toggle.attr('aria-expanded', 'false');
+				$panel.stop(true, true).slideUp(240, function() {
+					$panel.attr('hidden', true);
+				});
+				return;
+			}
+
+			$item.addClass('is-open');
+			$toggle.attr('aria-expanded', 'true');
+			$panel.removeAttr('hidden').hide().stop(true, true).slideDown(280);
+		});
+	});
+});
+
+$(function() {
+	var $slider = $('.js-sm-interview-swiper');
+	if (!$slider.length || typeof $.fn.slick !== 'function') {
+		return;
+	}
+
+	$slider.each(function() {
+		var $el = $(this);
+		if ($el.hasClass('slick-initialized')) {
+			return;
+		}
+
+		$el.slick({
+			arrows: false,
+			dots: true,
+			infinite: false,
+			speed: 420,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			centerMode: false,
+			centerPadding: '0',
+			variableWidth: true,
+			adaptiveHeight: false,
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						centerMode: false,
+						centerPadding: '0',
+						variableWidth: false,
+						infinite: true,
+						adaptiveHeight: true
+					}
+				}
+			]
+		});
+	});
+});
