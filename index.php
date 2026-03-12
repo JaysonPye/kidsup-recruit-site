@@ -170,6 +170,18 @@ include __DIR__ . '/includes/header.php';
           <span class="interview-panel__name">お名前</span>
         </div>
       </div>
+      <div class="interview-panel interview-panel--text interview-panel--n11">
+        <p class="interview-panel__quote">子どもたちの笑顔に元気をもらえる、毎日がやりがいのある仕事です。</p>
+      </div>
+      <div class="interview-panel interview-panel--image interview-panel--n12">
+        <img class="interview-panel__photo" src="images/interview-6.jpg" alt="新卒新入社員の写真">
+        <img class="interview-panel__arrow interview-panel__arrow--top interview-panel__arrow--flip" src="images/interview-arrow.png" alt="" aria-hidden="true">
+        <div class="interview-panel__overlay">
+          <span class="interview-panel__role">新卒新入社員</span>
+          <span class="interview-panel__meta">20--年入社</span>
+          <span class="interview-panel__name">お名前</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
