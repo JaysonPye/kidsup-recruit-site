@@ -207,10 +207,10 @@ include __DIR__ . '/includes/header.php';
       </article>
       <article class="recruit-card">
         <div class="recruit-card__media">
-          <img src="images/recruit-02.jpg" alt="バイリンガルティーチャーの写真">
+          <img src="images/recruit-02.jpg" alt="バイリンガルエデュケーターの写真">
         </div>
         <div class="recruit-card__body">
-          <h3 class="recruit-card__title">バイリンガルティーチャー【新卒・中途】</h3>
+          <h3 class="recruit-card__title">バイリンガルエデュケーター【新卒・中途】</h3>
           <p class="recruit-card__text">英語×教育で子どもたちの成長をサポートする仕事。レッスンや日々のコミュニケーションを通して「英語って楽しい」を引き出します。未経験でも大丈夫！研修があり、英語力と指導力を伸ばせる環境です。</p>
           <a class="recruit-card__more" href="apply.php">view more</a>
         </div>

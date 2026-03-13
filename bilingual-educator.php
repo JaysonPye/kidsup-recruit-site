@@ -1,10 +1,10 @@
 <?php
-$page_title = 'Kids Up Recruit | Bilingual Teacher';
+$page_title = 'Kids Up Recruit | Bilingual Educator';
 $body_class = 'page-school-manager page-bilingual-educator';
 $page_top_title_line1 = 'バイリンガルティーチャー';
 $page_top_title_line2 = "グローバルな環境で自身の英語力を活かしながら、\n子どもたちの成長に大きく貢献できます";
-$page_top_image = 'images/top-sm.jpg';
-$page_top_image_mob = 'images/top-sm-mob.jpg';
+$page_top_image = 'images/top-bilingual.jpg';
+$page_top_image_mob = 'images/top-bilingual-mob.jpg';
 $page_top_alt = 'バイリンガルティーチャー';
 include __DIR__ . '/includes/header.php';
 ?>
@@ -17,7 +17,7 @@ include __DIR__ . '/includes/header.php';
     <div class="sm-about-grid">
       <article class="sm-about-card">
         <div class="sm-about-card__media">
-          <img src="images/whats_sm-01.jpg" alt="子どもとスタッフの様子">
+          <img src="images/whats_bilingual-01.jpg" alt="子どもとスタッフの様子">
         </div>
         <div class="sm-about-card__body">
           <h3 class="sm-about-card__title">子どもたちの「できた！」を一緒に喜べるやりがい</h3>
@@ -27,7 +27,7 @@ include __DIR__ . '/includes/header.php';
       </article>
       <article class="sm-about-card">
         <div class="sm-about-card__media">
-          <img src="images/whats_sm-02.jpg" alt="グローバルな環境で働くスタッフの様子">
+          <img src="images/whats_bilingual-02.jpg" alt="グローバルな環境で働くスタッフの様子">
         </div>
         <div class="sm-about-card__body">
           <h3 class="sm-about-card__title">英語力を活かしてグローバルな教育現場で活躍できる</h3>
@@ -37,7 +37,7 @@ include __DIR__ . '/includes/header.php';
       </article>
       <article class="sm-about-card">
         <div class="sm-about-card__media">
-          <img src="images/whats_sm-03.jpg" alt="キャリアアップの機会に関するイメージ">
+          <img src="images/whats_bilingual-03.jpg" alt="キャリアアップの機会に関するイメージ">
         </div>
         <div class="sm-about-card__body">
           <h3 class="sm-about-card__title">教育スキルとキャリアを同時に伸ばせる環境</h3>
@@ -453,8 +453,8 @@ include __DIR__ . '/includes/header.php';
     </header>
 
     <div class="sm-career-panel">
-      <img class="sm-career-panel__image sm-career-panel__image--desktop" src="images/career_step.png" alt="キャリアステップの図">
-      <img class="sm-career-panel__image sm-career-panel__image--mobile" src="images/career_step_mob.png" alt="キャリアステップの図">
+      <img class="sm-career-panel__image sm-career-panel__image--desktop" src="images/teacher_career_step.png" alt="キャリアステップの図">
+      <img class="sm-career-panel__image sm-career-panel__image--mobile" src="images/teacher_career_step_mob.png" alt="キャリアステップの図">
     </div>
   </div>
 </section>
@@ -477,7 +477,7 @@ include __DIR__ . '/includes/header.php';
         </div>
       </div>
       <div class="sm-interview-feature__media">
-        <img src="images/interview_01.jpg" alt="スクールで子どもたちと関わるスタッフの様子">
+        <img src="images/bilingual_teacher_interview-01.jpg" alt="スクールで子どもたちと関わるスタッフの様子">
       </div>
     </div>
 

@@ -3,8 +3,8 @@ $page_title = 'Kids Up Recruit | Native Teacher';
 $body_class = 'page-school-manager page-native-educator';
 $page_top_title_line1 = 'Native Teacher';
 $page_top_title_line2 = "Inspiring children’s futures through real English education";
-$page_top_image = 'images/top-sm.jpg';
-$page_top_image_mob = 'images/top-sm-mob.jpg';
+$page_top_image = 'images/top-native.jpg';
+$page_top_image_mob = 'images/top-native-mob.jpg';
 $page_top_alt = 'Native Teacher';
 include __DIR__ . '/includes/header.php';
 ?>
@@ -17,7 +17,7 @@ include __DIR__ . '/includes/header.php';
     <div class="sm-about-grid">
       <article class="sm-about-card">
         <div class="sm-about-card__media">
-          <img src="images/whats_sm-01.jpg" alt="子どもとスタッフの様子">
+          <img src="images/whats_native-01.jpg" alt="子どもとスタッフの様子">
         </div>
         <div class="sm-about-card__body">
           <h3 class="sm-about-card__title">A rewarding role where you can celebrate every child’s “I did it!” moment</h3>
@@ -27,7 +27,7 @@ include __DIR__ . '/includes/header.php';
       </article>
       <article class="sm-about-card">
         <div class="sm-about-card__media">
-          <img src="images/whats_sm-02.jpg" alt="グローバルな環境で働くスタッフの様子">
+          <img src="images/whats_native-02.jpg" alt="グローバルな環境で働くスタッフの様子">
         </div>
         <div class="sm-about-card__body">
           <h3 class="sm-about-card__title">Use your English in a truly global educational environment</h3>
@@ -37,7 +37,7 @@ include __DIR__ . '/includes/header.php';
       </article>
       <article class="sm-about-card">
         <div class="sm-about-card__media">
-          <img src="images/whats_sm-03.jpg" alt="キャリアアップの機会に関するイメージ">
+          <img src="images/whats_native-03.jpg" alt="キャリアアップの機会に関するイメージ">
         </div>
         <div class="sm-about-card__body">
           <h3 class="sm-about-card__title">An environment where you can grow your teaching skills and career</h3>
@@ -230,10 +230,10 @@ include __DIR__ . '/includes/header.php';
           <div class="sm-attractive-card__icon">
             <img src="images/attractive_01.png" alt="" aria-hidden="true">
           </div>
-          <p class="sm-attractive-card__stat" aria-label="年間休日124日以上">
-            <span class="sm-attractive-card__label">年間休日</span>
+          <p class="sm-attractive-card__stat" aria-label="Over 124 days off per year">
+            <span class="sm-attractive-card__label">Over</span>
             <span class="sm-attractive-card__value">124</span>
-            <span class="sm-attractive-card__suffix">日以上</span>
+            <span class="sm-attractive-card__suffix">days off per year</span>
           </p>
         </div>
       </article>
@@ -243,12 +243,12 @@ include __DIR__ . '/includes/header.php';
           <div class="sm-attractive-card__icon">
             <img src="images/attractive_02.png" alt="" aria-hidden="true">
           </div>
-          <p class="sm-attractive-card__stat" aria-label="平均残業時間 月3時間">
-            <span class="sm-attractive-card__label">平均残業時間 月</span>
+          <p class="sm-attractive-card__stat" aria-label="Average monthly overtime: 3 hours">
+            <span class="sm-attractive-card__label">Average monthly overtime:</span>
             <span class="sm-attractive-card__value">3</span>
-            <span class="sm-attractive-card__suffix">時間</span>
+            <span class="sm-attractive-card__suffix">hours</span>
           </p>
-          <p class="sm-attractive-card__note">※2024年度実績</p>
+          <p class="sm-attractive-card__note">FY2024 result</p>
         </div>
       </article>
       <article class="sm-attractive-card sm-attractive-card--with-note">
@@ -257,12 +257,12 @@ include __DIR__ . '/includes/header.php';
           <div class="sm-attractive-card__icon">
             <img src="images/attractive_03.png" alt="" aria-hidden="true">
           </div>
-          <p class="sm-attractive-card__stat" aria-label="育休取得率100パーセント">
-            <span class="sm-attractive-card__label">育休取得率</span>
+          <p class="sm-attractive-card__stat" aria-label="Childcare leave utilization rate: 100%">
+            <span class="sm-attractive-card__label">Childcare leave utilization rate:</span>
             <span class="sm-attractive-card__value">100</span>
             <span class="sm-attractive-card__suffix">%</span>
           </p>
-          <p class="sm-attractive-card__note">※2024年度実績</p>
+          <p class="sm-attractive-card__note">FY2024 result</p>
         </div>
       </article>
     </div>
@@ -344,7 +344,7 @@ include __DIR__ . '/includes/header.php';
     <header class="sm-benefits-section__header">
       <div class="ku-section-heading ku-section-heading--image ku-section-heading--orange sm-benefits-heading">
         <img class="ku-section-heading__image" src="images/benefits.png" alt="Benefits">
-        <p id="sm-benefits-title" class="ku-section-heading__subtitle">福利厚生</p>
+        <p id="sm-benefits-title" class="ku-section-heading__subtitle">Benefits</p>
         <span class="ku-section-heading__line" aria-hidden="true"></span>
       </div>
     </header>
@@ -352,45 +352,45 @@ include __DIR__ . '/includes/header.php';
     $sm_benefits_items = [
       [
         'icon' => 'images/benefits_03.png',
-        'title' => '各種研修制度',
-        'note_html' => '入社後研修、マネジメント研修など',
+        'title' => 'Training Programs',
+        'note_html' => 'Various training programs including onboarding training and management training',
       ],
       [
         'icon' => 'images/benefits_01.png',
-        'title' => '社会保険完備',
-        'note_html' => '健康保険・厚生年金<br>雇用保険・労災保険',
+        'title' => 'Social Insurance Coverage',
+        'note_html' => 'Health insurance, pension, employment insurance, and workers&#39; compensation',
       ],
       [
         'icon' => 'images/benefits_05.png',
-        'title' => '授業料割引制度',
-        'note_html' => 'お子さまがKids UPに通う場合に割引',
+        'title' => 'Tuition Discount Program',
+        'note_html' => 'Discounts available when enrolling your child in KidsUP',
       ],
       [
         'icon' => 'images/benefits_04.png',
-        'title' => '時短勤務補助手当',
-        'note_html' => 'お子さまが発熱等で早退した際に月10時間まで給与を補填',
+        'title' => 'Flexible Working Support Allowance',
+        'note_html' => 'Salary guaranteed for up to 10 hours per month for flexible working arrangements when needed due to child-related circumstances',
       ],
       [
         'icon' => 'images/benefits_09.png',
-        'title' => '父母サポート制度',
-        'note_html' => '育休から復帰後は男女問わず毎月1万円を支給。急に退勤する場合に月10時間まで給与を補填。',
+        'title' => 'Parental Support Program',
+        'note_html' => 'Up to 1 month of paid leave per year for childcare-related reasons<br>Up to 10 hours of paid leave per month available for urgent needs',
       ],
       [
         'icon' => 'images/benefits_08.png',
-        'title' => '保養所施設',
-        'note_html' => 'ハワイ、タイ、沖縄、その他',
+        'title' => 'Company Retreat Facilities',
+        'note_html' => 'Available in Hawaii, Thailand, Okinawa, and other locations',
       ],
       [
         'icon' => 'images/benefits_06.png',
-        'title' => '定期健康診断',
+        'title' => 'Annual Health Checkups',
       ],
       [
         'icon' => 'images/benefits_07.png',
-        'title' => 'MVP制度',
+        'title' => 'MVP Award Program',
       ],
       [
         'icon' => 'images/benefits_02.png',
-        'title' => '退職金制度',
+        'title' => 'Retirement Benefit System',
       ],
     ];
     ?>
@@ -420,8 +420,8 @@ include __DIR__ . '/includes/header.php';
     </header>
 
     <div class="sm-career-panel">
-      <img class="sm-career-panel__image sm-career-panel__image--desktop" src="images/career_step.png" alt="キャリアステップの図">
-      <img class="sm-career-panel__image sm-career-panel__image--mobile" src="images/career_step_mob.png" alt="キャリアステップの図">
+      <img class="sm-career-panel__image sm-career-panel__image--desktop" src="images/native_career_step.png" alt="キャリアステップの図">
+      <img class="sm-career-panel__image sm-career-panel__image--mobile" src="images/native_career_step_mob.png" alt="キャリアステップの図">
     </div>
   </div>
 </section>
@@ -440,27 +440,27 @@ include __DIR__ . '/includes/header.php';
         <h3 class="sm-interview-feature__lead">グローバルな環境の中で英語を日常的に使いながら、自分自身も成長し続けられる点が魅力です！</h3>
         <div class="sm-interview-feature__meta">
           <span class="sm-interview-feature__meta-line" aria-hidden="true"></span>
-          <p class="sm-interview-feature__meta-text">バイリンガルティーチャー<br>2023年入社</p>
+          <p class="sm-interview-feature__meta-text">Native Teacher<br>Joined in 2023</p>
         </div>
       </div>
       <div class="sm-interview-feature__media">
-        <img src="images/interview_01.jpg" alt="スクールで子どもたちと関わるスタッフの様子">
+        <img src="images/teacher_interview_01.jpg" alt="スクールで子どもたちと関わるスタッフの様子">
       </div>
     </div>
 
     <?php
     $sm_interview_slides = [
       [
-        'title' => '入社を決めた理由',
-        'text' => '留学で身につけた英語力を活かせる仕事を探していた中で、英語環境で子どもと関われる点に魅力を感じました。<br>英語教育は未経験でしたが、研修制度が整っていると知り、安心して挑戦できると思ったことが決め手です。',
+        'title' => 'Why did you decide to join KidsUP?',
+        'text' => 'After gaining three years of teaching experience, I was looking for a role where I could be more actively involved in children&#39;s development rather than just delivering preset lessons.<br>What stood out about KidsUP was the focus on immersive learning and the opportunity to manage classes, support different age groups, and contribute to a child&#39;s overall growth.<br>I was also drawn to the structured training and collaborative environment, which allows teachers to continuously refine their teaching approach and classroom management skills.',
       ],
       [
-        'title' => '仕事の難しさ・やりがい',
-        'text' => '最初は英語で子どもたちに分かりやすく伝えることや、年齢に合わせたサポートの仕方に難しさを感じました。<br>しかし、関わりを重ねる中で子どもたちが少しずつ英語に自信を持ち、成長していく姿を見るたびに大きなやりがいを感じます。<br>子ども一人ひとりの成長に寄り添いながら、自分自身のコミュニケーション力や指導力も伸ばせる仕事だと思います。',
+        'title' => 'Challenges and Rewards of the Job',
+        'text' => 'One of the challenges is adapting teaching methods to different age groups and individual personalities.<br>Each child learns differently, so it requires observation, flexibility, and strong classroom management skills.<br>However, this is also what makes the job highly rewarding.<br>Seeing children become more independent, confident, and engaged in learning over time gives me a strong sense of purpose as an educator.<br>Compared to my previous roles, I feel that I am developing more practical teaching skills, including lesson facilitation, behavior management, and student engagement strategies.',
       ],
       [
-        'title' => 'これから挑戦したいこと',
-        'text' => '今後は指導スキルや現場での対応力を高め、後輩スタッフのサポートもできる存在を目指しています。<br>将来的にはOJTトレーナーとして、新しく入社するスタッフを支えながら、より良いスクール運営と教育の質向上に貢献していきたいと考えています。',
+        'title' => 'What would you like to challenge in the future?',
+        'text' => 'Going forward, I would like to further refine my teaching strategies and take on a mentoring role for newer teachers.<br>I am particularly interested in becoming an OJT trainer and contributing to teacher development and program quality.<br>In the long term, I hope to be involved not only in teaching but also in curriculum improvement and educational program development.',
       ],
     ];
     ?>
@@ -483,7 +483,7 @@ include __DIR__ . '/includes/header.php';
     <header class="sm-flow-section__header">
       <div class="ku-section-heading ku-section-heading--image ku-section-heading--white sm-flow-heading">
         <img class="ku-section-heading__image" src="images/flow.png" alt="Flow">
-        <p id="sm-flow-title" class="ku-section-heading__subtitle">選考フロー</p>
+        <p id="sm-flow-title" class="ku-section-heading__subtitle">Flow</p>
         <span class="ku-section-heading__line" aria-hidden="true"></span>
       </div>
     </header>
@@ -492,27 +492,27 @@ include __DIR__ . '/includes/header.php';
     $sm_flow_steps = [
       [
         'num' => '01',
-        'title' => '応募',
+        'title' => 'Application',
         'icon' => 'images/flow_01.png',
-        'text_html' => 'まずは「応募はこちら」よりお気軽にご応募ください。<br>KidsUPのホームページからの応募をお待ちしております。',
+        'text_html' => 'Please apply easily by clicking the “Apply” button.<br>We look forward to receiving your application through the KidsUP website.',
       ],
       [
         'num' => '02',
-        'title' => '書類選考',
+        'title' => 'Document Screening',
         'icon' => 'images/flow_02.png',
-        'text_html' => '書類のアップロードフォームをご案内いたしますので、<br>履歴書、職務経歴書をアップロードください。',
+        'text_html' => 'You will be guided to the document upload form via email.<br>Please upload your resume and CV.',
       ],
       [
         'num' => '03',
-        'title' => '面接(オンライン)',
+        'title' => 'Interview (Online)',
         'icon' => 'images/flow_03.png',
-        'text_html' => 'オンラインで面接可能です。<br>面接で聞きたいことを準備してきてください。',
+        'text_html' => 'Interviews will be conducted online.<br>Please feel free to prepare any questions you would like to ask during the interview.',
       ],
       [
         'num' => '04',
-        'title' => '合否のご連絡',
+        'title' => 'Result Notification',
         'icon' => 'images/flow_05.png',
-        'text_html' => '面接後1週間以内にご連絡いたします。<br>応募から合格まで最短2週間程度で可能です。',
+        'text_html' => 'We will notify you of the result within approximately one week after the interview.<br>The entire process from application to offer can be completed in as little as two weeks.',
       ],
     ];
     ?>
@@ -539,7 +539,7 @@ include __DIR__ . '/includes/header.php';
     <header class="sm-faq-section__header">
       <div class="ku-section-heading ku-section-heading--image ku-section-heading--orange sm-faq-heading">
         <img class="ku-section-heading__image" src="images/q&amp;a.png" alt="Q&A">
-        <p id="sm-faq-title" class="ku-section-heading__subtitle">よくある質問</p>
+        <p id="sm-faq-title" class="ku-section-heading__subtitle">Q&amp;A</p>
         <span class="ku-section-heading__line" aria-hidden="true"></span>
       </div>
     </header>
@@ -547,24 +547,20 @@ include __DIR__ . '/includes/header.php';
     <?php
     $sm_faq_items = [
       [
-        'q' => '英語教育の経験がなくても応募できますか？',
-        'a_html' => 'はい、英語教育が未経験の方でもご応募いただけます。<br>入社後は研修やOJTを通して、子どもへの関わり方や指導方法を一から学べる環境を整えています。',
+        'q' => 'Can I apply even if I don’t have formal teaching experience?',
+        'a_html' => 'Yes. While teaching experience is welcome, it is not required.<br>We provide comprehensive training and classroom support to help you develop the skills needed to work confidently with children.',
       ],
       [
-        'q' => '英語はどのくらいのレベルが必要ですか？',
-        'a_html' => '専門的な英語スキルは不要ですが、日常的なコミュニケーションを英語で行えるレベルが必要です。<br>ネイティブスタッフとのコミュニケーションや、子どもたちとの英語でのやり取りが中心となります。',
+        'q' => 'What qualifications are you looking for?',
+        'a_html' => 'We look for candidates who are passionate about working with children, collaborative team players, and committed to creating a positive learning environment.<br>Previous experience in childcare, education, coaching, or related fields is a plus.',
       ],
       [
-        'q' => '英語力を維持・向上させることはできますか？',
-        'a_html' => '日常的に英語を使う環境のため、自然と英語力を維持・向上させることができます。<br>ネイティブスタッフとの連携や実務を通して、実践的な英語力を身につけることが可能です。',
+        'q' => 'What is the teaching environment like?',
+        'a_html' => 'You will work in an immersive English environment alongside both international and Japanese staff.<br>Classes focus on active learning, communication, and helping children build confidence in English through engaging activities.',
       ],
       [
-        'q' => '面接ではどのようなことを聞かれますか？',
-        'a_html' => 'これまでのご経験や志望理由、子どもと関わることへの想いなどを中心にお伺いします。<br>面接はお互いの理解を深めるための場でもありますので、リラックスしてご参加ください。',
-      ],
-      [
-        'q' => '英語での面接はありますか？',
-        'a_html' => '面接は基本的に日本語で行いますが、英語での自己紹介をお願いする場合があります。<br>高度な英語力を評価するものではなく、日常会話レベルのコミュニケーションができるかを確認する目的です。',
+        'q' => 'What kind of questions are asked during the interview?',
+        'a_html' => 'We will ask about your previous experience, your motivation for applying, and your approach to working with children.<br>The interview is also an opportunity for you to learn more about our program and ask any questions you may have.',
       ],
     ];
     ?>
@@ -602,7 +598,7 @@ include __DIR__ . '/includes/header.php';
     </div>
 
     <div class="sm-faq-section__cta">
-      <a class="sm-faq-section__apply" href="<?php echo esc_url($apply_cta_href ?? 'apply.php'); ?>">応募はこちら</a>
+      <a class="sm-faq-section__apply" href="<?php echo esc_url($apply_cta_href ?? 'apply.php'); ?>">Apply Now!</a>
     </div>
   </div>
 </section>

@@ -65,7 +65,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">出勤</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_01.jpg" alt="出勤時の様子">
+                <img src="images/sm_schedule-01.jpg" alt="出勤時の様子">
               </div>
               <div class="sm-schedule-item__text">
                 <p>満員電車を避けてゆったり出勤。</p>
@@ -82,7 +82,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">welcome</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_02.jpg" alt="子どもたちを迎える様子">
+                <img src="images/sm_schedule-02.jpg" alt="子どもたちを迎える様子">
               </div>
               <div class="sm-schedule-item__text">
                 <p>子どもたちが続々とKidsUPに到着！</p>
@@ -97,7 +97,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">Daily Activity</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_03.jpg" alt="アクティビティの様子">
+                <img src="images/sm_schedule-03.jpg" alt="アクティビティの様子">
               </div>
               <div class="sm-schedule-item__text">
                 <p>ダンスやエクササイズ、工作など、子どもたちが楽しみながら英語に触れられるアクティビティタイム。</p>
@@ -112,7 +112,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">生徒帰宅</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_04.jpg" alt="生徒帰宅時の様子">
+                <img src="images/sm_schedule-04.jpg" alt="生徒帰宅時の様子">
               </div>
               <div class="sm-schedule-item__text">
                 <p>保護者のお迎えや帰りの送迎バスが出発。</p>
@@ -127,7 +127,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">退勤</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_05.jpg" alt="退勤時の様子">
+                <img src="images/sm_schedule-05.jpg" alt="退勤時の様子">
               </div>
               <div class="sm-schedule-item__text">
                 <p>平均残業は月9時間とほぼなし。</p>
