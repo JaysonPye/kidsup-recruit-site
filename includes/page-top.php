@@ -24,7 +24,15 @@ if (!isset($page_top_alt)) {
 <section class="page-top" aria-label="ページトップ">
   <div class="page-top__inner">
     <picture class="page-top__image">
+      <?php $page_top_image_mob_webp = ku_webp_variant($page_top_image_mob); ?>
+      <?php if ($page_top_image_mob_webp !== null): ?>
+        <source media="(max-width: 768px)" srcset="<?php echo esc_url($page_top_image_mob_webp); ?>" type="image/webp">
+      <?php endif; ?>
       <source media="(max-width: 768px)" srcset="<?php echo esc_url($page_top_image_mob); ?>">
+      <?php $page_top_image_webp = ku_webp_variant($page_top_image); ?>
+      <?php if ($page_top_image_webp !== null): ?>
+        <source srcset="<?php echo esc_url($page_top_image_webp); ?>" type="image/webp">
+      <?php endif; ?>
       <img src="<?php echo esc_url($page_top_image); ?>" alt="<?php echo esc_attr($page_top_alt); ?>" loading="eager" decoding="async">
     </picture>
     <div class="page-top__content">

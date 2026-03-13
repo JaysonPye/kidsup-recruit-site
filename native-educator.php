@@ -17,7 +17,7 @@ include __DIR__ . '/includes/header.php';
     <div class="sm-about-grid">
       <article class="sm-about-card">
         <div class="sm-about-card__media">
-          <img src="images/whats_native-01.jpg" alt="子どもとスタッフの様子">
+          <?php echo ku_image('images/whats_native-01.jpg', '子どもとスタッフの様子'); ?>
         </div>
         <div class="sm-about-card__body">
           <h3 class="sm-about-card__title">A rewarding role where you can celebrate every child’s “I did it!” moment</h3>
@@ -27,7 +27,7 @@ include __DIR__ . '/includes/header.php';
       </article>
       <article class="sm-about-card">
         <div class="sm-about-card__media">
-          <img src="images/whats_native-02.jpg" alt="グローバルな環境で働くスタッフの様子">
+          <?php echo ku_image('images/whats_native-02.jpg', 'グローバルな環境で働くスタッフの様子'); ?>
         </div>
         <div class="sm-about-card__body">
           <h3 class="sm-about-card__title">Use your English in a truly global educational environment</h3>
@@ -37,7 +37,7 @@ include __DIR__ . '/includes/header.php';
       </article>
       <article class="sm-about-card">
         <div class="sm-about-card__media">
-          <img src="images/whats_native-03.jpg" alt="キャリアアップの機会に関するイメージ">
+          <?php echo ku_image('images/whats_native-03.jpg', 'キャリアアップの機会に関するイメージ'); ?>
         </div>
         <div class="sm-about-card__body">
           <h3 class="sm-about-card__title">An environment where you can grow your teaching skills and career</h3>
@@ -65,7 +65,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">Start of the Day</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_01.jpg" alt="Start of the day">
+                <?php echo ku_image('images/schedule_01.jpg', 'Start of the day'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>The day begins with a team meeting where teachers connect, share student updates, and prepare for lessons together. Before the children arrive, we collaborate as a team to create a fun and engaging learning experience for the day.</p>
@@ -78,7 +78,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">Pick-up Time</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_02.jpg" alt="Pick-up time">
+                <?php echo ku_image('images/schedule_02.jpg', 'Pick-up time'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>It’s time to welcome the children as they arrive full of excitement and curiosity. “What are we doing today?” they ask with bright smiles. Whether it’s crafts, games, or special activities, this is when the fun and energy of the day truly begin.</p>
@@ -91,7 +91,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">Daily Activity</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_03.jpg" alt="Daily activity">
+                <?php echo ku_image('images/schedule_03.jpg', 'Daily activity'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>Each day includes a variety of activities such as physical play, arts and crafts, and simple science experiments. Through play-based learning, children naturally experience authentic English while enjoying hands-on activities in a lively and supportive environment.</p>
@@ -104,7 +104,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">English Class</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_04.jpg" alt="English class">
+                <?php echo ku_image('images/schedule_04.jpg', 'English class'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>Teachers lead structured, interactive lessons that develop the four core skills: reading, writing, speaking, and listening. Using curriculum materials and engaging activities, you help children build practical communication skills in a fun and meaningful way.</p>
@@ -117,7 +117,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">Advanced Class Begins</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_05.jpg" alt="Advanced class begins">
+                <?php echo ku_image('images/schedule_05.jpg', 'Advanced class begins'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>For more proficient students, teachers provide focused lessons to further develop their language abilities. With smaller class sizes, you can give more individualized attention and support each child’s progress.</p>
@@ -130,7 +130,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">End of the Day</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_05.jpg" alt="End of the day">
+                <?php echo ku_image('images/schedule_05.jpg', 'End of the day'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>Overtime is minimal (around three hours per month on average), and there is no take-home work. This allows teachers to maintain a healthy work-life balance and fully recharge after the day.</p>
@@ -207,7 +207,7 @@ include __DIR__ . '/includes/header.php';
             <p class="sm-hr-item__text"><?php echo $item['html']; ?></p>
           </div>
           <div class="sm-hr-item__media">
-            <img src="<?php echo htmlspecialchars($item['image'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($item['alt'], ENT_QUOTES, 'UTF-8'); ?>">
+            <?php echo ku_image($item['image'], $item['alt']); ?>
           </div>
         </article>
       <?php endforeach; ?>
@@ -444,7 +444,7 @@ include __DIR__ . '/includes/header.php';
         </div>
       </div>
       <div class="sm-interview-feature__media">
-        <img src="images/teacher_interview_01.jpg" alt="スクールで子どもたちと関わるスタッフの様子">
+        <?php echo ku_image('images/teacher_interview_01.jpg', 'スクールで子どもたちと関わるスタッフの様子'); ?>
       </div>
     </div>
 

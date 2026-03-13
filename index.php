@@ -26,7 +26,7 @@ include __DIR__ . '/includes/header.php';
         </p>
       </div>
       <div class="about-media">
-        <img src="images/about_us.jpg" alt="KidsUPの活動の様子">
+        <?php echo ku_image('images/about_us.jpg', 'KidsUPの活動の様子'); ?>
       </div>
     </div>
     <details class="about-details">
@@ -114,7 +114,7 @@ include __DIR__ . '/includes/header.php';
         <p class="interview-panel__quote">子どもだけでなく、グローバルな環境でチームの成長にも貢献できることにやりがいを感じます！</p>
       </div>
       <div class="interview-panel interview-panel--image interview-panel--n2">
-        <img class="interview-panel__photo" src="images/interview-5.jpg" alt="バイリンガルエデュケーターの写真">
+        <?php echo ku_image('images/interview-5.jpg', 'バイリンガルエデュケーターの写真', ['class' => 'interview-panel__photo']); ?>
         <img class="interview-panel__arrow interview-panel__arrow--bottom" src="images/interview-arrow.png" alt="" aria-hidden="true">
         <div class="interview-panel__overlay">
           <span class="interview-panel__role">バイリンガルエデュケーター</span>
@@ -126,7 +126,7 @@ include __DIR__ . '/includes/header.php';
         <p class="interview-panel__quote">Seeing children having fun while learning is the best!</p>
       </div>
       <div class="interview-panel interview-panel--image interview-panel--n4">
-        <img class="interview-panel__photo" src="images/interview-1.jpg" alt="スクールマネージャーの写真">
+        <?php echo ku_image('images/interview-1.jpg', 'スクールマネージャーの写真', ['class' => 'interview-panel__photo']); ?>
         <img class="interview-panel__arrow interview-panel__arrow--top interview-panel__arrow--flip" src="images/interview-arrow.png" alt="" aria-hidden="true">
         <div class="interview-panel__overlay">
           <span class="interview-panel__role">スクールマネージャー</span>
@@ -138,7 +138,7 @@ include __DIR__ . '/includes/header.php';
         <p class="interview-panel__quote">たくさんの経験を通して子どもたちの「できた！」を育て、間近で成長を実感できます！</p>
       </div>
       <div class="interview-panel interview-panel--image interview-panel--n6">
-        <img class="interview-panel__photo" src="images/interview-4.jpg" alt="ネイティブ英語教師の写真">
+        <?php echo ku_image('images/interview-4.jpg', 'ネイティブ英語教師の写真', ['class' => 'interview-panel__photo']); ?>
         <img class="interview-panel__arrow interview-panel__arrow--top interview-panel__arrow--flip" src="images/interview-arrow.png" alt="" aria-hidden="true">
         <div class="interview-panel__overlay">
           <span class="interview-panel__role">ネイティブ英語教師</span>
@@ -150,7 +150,7 @@ include __DIR__ . '/includes/header.php';
         <p class="interview-panel__quote">安全運転で、子どもたちの一日を支える大切な役割です。</p>
       </div>
       <div class="interview-panel interview-panel--image interview-panel--n8">
-        <img class="interview-panel__photo" src="images/interview-6.jpg" alt="送迎バス搭乗員の写真">
+        <?php echo ku_image('images/interview-6.jpg', '送迎バス搭乗員の写真', ['class' => 'interview-panel__photo']); ?>
         <img class="interview-panel__arrow interview-panel__arrow--bottom" src="images/interview-arrow.png" alt="" aria-hidden="true">
         <div class="interview-panel__overlay">
           <span class="interview-panel__role">送迎バス搭乗員</span>
@@ -162,7 +162,7 @@ include __DIR__ . '/includes/header.php';
         <p class="interview-panel__quote">グローバルな環境で、子どもたちと一緒に自分自身も大きく成長できます！</p>
       </div>
       <div class="interview-panel interview-panel--image interview-panel--n10">
-        <img class="interview-panel__photo" src="images/interview-3.jpg" alt="送迎バスドライバーの写真">
+        <?php echo ku_image('images/interview-3.jpg', '送迎バスドライバーの写真', ['class' => 'interview-panel__photo']); ?>
         <img class="interview-panel__arrow interview-panel__arrow--top interview-panel__arrow--flip" src="images/interview-arrow.png" alt="" aria-hidden="true">
         <div class="interview-panel__overlay">
           <span class="interview-panel__role">送迎バスドライバー</span>
@@ -174,7 +174,7 @@ include __DIR__ . '/includes/header.php';
         <p class="interview-panel__quote">子どもたちの笑顔に元気をもらえる、毎日がやりがいのある仕事です。</p>
       </div>
       <div class="interview-panel interview-panel--image interview-panel--n12">
-        <img class="interview-panel__photo" src="images/interview-2.jpg" alt="新卒新入社員の写真">
+        <?php echo ku_image('images/interview-2.jpg', '新卒新入社員の写真', ['class' => 'interview-panel__photo']); ?>
         <img class="interview-panel__arrow interview-panel__arrow--top interview-panel__arrow--flip" src="images/interview-arrow.png" alt="" aria-hidden="true">
         <div class="interview-panel__overlay">
           <span class="interview-panel__role">新卒新入社員</span>
@@ -197,7 +197,7 @@ include __DIR__ . '/includes/header.php';
     <div class="recruit-grid">
       <article class="recruit-card">
         <div class="recruit-card__media">
-          <img src="images/recruit-01.jpg" alt="スクールマネージャーの写真">
+          <?php echo ku_image('images/recruit-01.jpg', 'スクールマネージャーの写真'); ?>
         </div>
         <div class="recruit-card__body">
           <h3 class="recruit-card__title">スクールマネージャー【新卒・中途】</h3>
@@ -207,7 +207,7 @@ include __DIR__ . '/includes/header.php';
       </article>
       <article class="recruit-card">
         <div class="recruit-card__media">
-          <img src="images/recruit-02.jpg" alt="バイリンガルエデュケーターの写真">
+          <?php echo ku_image('images/recruit-02.jpg', 'バイリンガルエデュケーターの写真'); ?>
         </div>
         <div class="recruit-card__body">
           <h3 class="recruit-card__title">バイリンガルエデュケーター【新卒・中途】</h3>
@@ -217,7 +217,7 @@ include __DIR__ . '/includes/header.php';
       </article>
       <article class="recruit-card">
         <div class="recruit-card__media">
-          <img src="images/recruit-03.jpg" alt="ネイティブ英語教師の写真">
+          <?php echo ku_image('images/recruit-03.jpg', 'ネイティブ英語教師の写真'); ?>
         </div>
         <div class="recruit-card__body">
           <h3 class="recruit-card__title">English Native Teacher</h3>
@@ -227,7 +227,7 @@ include __DIR__ . '/includes/header.php';
       </article>
       <article class="recruit-card">
         <div class="recruit-card__media">
-          <img src="images/recruit-04.jpg" alt="送迎バスドライバーの写真">
+          <?php echo ku_image('images/recruit-04.jpg', '送迎バスドライバーの写真'); ?>
         </div>
         <div class="recruit-card__body">
           <h3 class="recruit-card__title">送迎バスドライバー</h3>
@@ -237,7 +237,7 @@ include __DIR__ . '/includes/header.php';
       </article>
       <article class="recruit-card">
         <div class="recruit-card__media">
-          <img src="images/recruit-05.jpg" alt="送迎バス搭乗員の写真">
+          <?php echo ku_image('images/recruit-05.jpg', '送迎バス搭乗員の写真'); ?>
         </div>
         <div class="recruit-card__body">
           <h3 class="recruit-card__title">送迎バス搭乗員</h3>

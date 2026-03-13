@@ -63,6 +63,48 @@ if (!function_exists('esc_attr')) {
     return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
   }
 }
+if (!function_exists('ku_webp_variant')) {
+  function ku_webp_variant($path) {
+    $info = pathinfo($path);
+    if (empty($info['extension'])) {
+      return null;
+    }
+    $ext = strtolower($info['extension']);
+    if ($ext !== 'jpg' && $ext !== 'jpeg') {
+      return null;
+    }
+    $dir = isset($info['dirname']) && $info['dirname'] !== '.' ? $info['dirname'] . '/' : '';
+    $webp = $dir . $info['filename'] . '.webp';
+    $root = dirname(__DIR__);
+    return is_file($root . '/' . $webp) ? $webp : null;
+  }
+}
+if (!function_exists('ku_attr_string')) {
+  function ku_attr_string($attrs = []) {
+    $parts = [];
+    foreach ($attrs as $key => $value) {
+      if ($value === null || $value === false) {
+        continue;
+      }
+      if ($value === true) {
+        $parts[] = esc_attr($key);
+        continue;
+      }
+      $parts[] = esc_attr($key) . '="' . esc_attr($value) . '"';
+    }
+    return $parts ? ' ' . implode(' ', $parts) : '';
+  }
+}
+if (!function_exists('ku_image')) {
+  function ku_image($src, $alt = '', $attrs = []) {
+    $img_attrs = ku_attr_string($attrs);
+    $webp = ku_webp_variant($src);
+    if ($webp !== null) {
+      return '<picture><source srcset="' . esc_url($webp) . '" type="image/webp"><img src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '"' . $img_attrs . '></picture>';
+    }
+    return '<img src="' . esc_url($src) . '" alt="' . esc_attr($alt) . '"' . $img_attrs . '>';
+  }
+}
 ?>
 <!doctype html>
 <html lang="ja" prefix="og: https://ogp.me/ns#">

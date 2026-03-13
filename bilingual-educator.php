@@ -17,7 +17,7 @@ include __DIR__ . '/includes/header.php';
     <div class="sm-about-grid">
       <article class="sm-about-card">
         <div class="sm-about-card__media">
-          <img src="images/whats_bilingual-01.jpg" alt="子どもとスタッフの様子">
+          <?php echo ku_image('images/whats_bilingual-01.jpg', '子どもとスタッフの様子'); ?>
         </div>
         <div class="sm-about-card__body">
           <h3 class="sm-about-card__title">子どもたちの「できた！」を一緒に喜べるやりがい</h3>
@@ -27,7 +27,7 @@ include __DIR__ . '/includes/header.php';
       </article>
       <article class="sm-about-card">
         <div class="sm-about-card__media">
-          <img src="images/whats_bilingual-02.jpg" alt="グローバルな環境で働くスタッフの様子">
+          <?php echo ku_image('images/whats_bilingual-02.jpg', 'グローバルな環境で働くスタッフの様子'); ?>
         </div>
         <div class="sm-about-card__body">
           <h3 class="sm-about-card__title">英語力を活かしてグローバルな教育現場で活躍できる</h3>
@@ -37,7 +37,7 @@ include __DIR__ . '/includes/header.php';
       </article>
       <article class="sm-about-card">
         <div class="sm-about-card__media">
-          <img src="images/whats_bilingual-03.jpg" alt="キャリアアップの機会に関するイメージ">
+          <?php echo ku_image('images/whats_bilingual-03.jpg', 'キャリアアップの機会に関するイメージ'); ?>
         </div>
         <div class="sm-about-card__body">
           <h3 class="sm-about-card__title">教育スキルとキャリアを同時に伸ばせる環境</h3>
@@ -65,7 +65,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">出勤</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_01.jpg" alt="出勤時の様子">
+                <?php echo ku_image('images/schedule_01.jpg', '出勤時の様子'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>朝のミーティングを英語で行い、1日のスタートから英語に囲まれた環境です。子どもたちが来る前に、生徒の様子を共有したり、レッスン準備をしたりと、チームで協力しながら楽しく準備を進めます。</p>
@@ -78,7 +78,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">お迎え時間</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_02.jpg" alt="子どもたちを迎える様子">
+                <?php echo ku_image('images/schedule_02.jpg', '子どもたちを迎える様子'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>子どもたちをお迎えする時間です。「今日は何をするのかな？」とワクワクしながら登園してくる子どもたち。工作？ゲーム？それとも別の楽しいアクティビティ？期待いっぱいの時間の始まりです。</p>
@@ -91,7 +91,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">Daily Activity</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_03.jpg" alt="アクティビティの様子">
+                <?php echo ku_image('images/schedule_03.jpg', 'アクティビティの様子'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>運動や工作、簡単なサイエンス実験など、日によってさまざまな活動を行います。子どもたちは遊びを楽しみながら、自然と英語に触れ、学んでいきます。毎日の活動を通して、「楽しい！」という気持ちを大切にしながら、一緒に過ごします。</p>
@@ -104,7 +104,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">イングリッシュクラス</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_04.jpg" alt="イングリッシュクラスの様子">
+                <?php echo ku_image('images/schedule_04.jpg', 'イングリッシュクラスの様子'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>リーディング・ライティング・スピーキング・リスニングの4技能をバランスよく伸ばすレッスンを行います。テキストを使用し、実用的な文法やコミュニケーション表現を指導します。明確なステップのあるカリキュラムにより、楽しい参加型の授業を実施します。</p>
@@ -117,7 +117,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">生徒帰宅</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_05.jpg" alt="生徒帰宅時の様子">
+                <?php echo ku_image('images/schedule_05.jpg', '生徒帰宅時の様子'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>保護者のお迎えや帰りの送迎バスが出発。</p>
@@ -132,7 +132,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">退勤</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <img src="images/schedule_05.jpg" alt="退勤時の様子">
+                <?php echo ku_image('images/schedule_05.jpg', '退勤時の様子'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>平均残業は月3時間とほぼなし。持ち帰り仕事もないため、仕事後はしっかりリフレッシュできます。</p>
@@ -209,7 +209,7 @@ include __DIR__ . '/includes/header.php';
             <p class="sm-hr-item__text"><?php echo $item['html']; ?></p>
           </div>
           <div class="sm-hr-item__media">
-            <img src="<?php echo htmlspecialchars($item['image'], ENT_QUOTES, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($item['alt'], ENT_QUOTES, 'UTF-8'); ?>">
+            <?php echo ku_image($item['image'], $item['alt']); ?>
           </div>
         </article>
       <?php endforeach; ?>
@@ -477,7 +477,7 @@ include __DIR__ . '/includes/header.php';
         </div>
       </div>
       <div class="sm-interview-feature__media">
-        <img src="images/bilingual_teacher_interview-01.jpg" alt="スクールで子どもたちと関わるスタッフの様子">
+        <?php echo ku_image('images/bilingual_teacher_interview-01.jpg', 'スクールで子どもたちと関わるスタッフの様子'); ?>
       </div>
     </div>
 
