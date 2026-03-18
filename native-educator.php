@@ -2,7 +2,7 @@
 $page_title = 'Kids Up Recruit | Native Teacher';
 $body_class = 'page-school-manager page-native-educator';
 $page_top_title_line1 = 'Native Teacher';
-$page_top_title_line2 = "Inspiring children’s futures through real English education";
+$page_top_title_line2 = "Inspiring children’s futures through engaging and authentic English education";
 $page_top_image = 'images/top-native.jpg';
 $page_top_image_mob = 'images/top-native-mob.jpg';
 $page_top_alt = 'Native Teacher';
@@ -12,7 +12,7 @@ include __DIR__ . '/includes/header.php';
 <section class="sm-about-section" aria-labelledby="sm-about-title">
   <div class="ku-section__inner">
     <header class="sm-about-section__header">
-      <h2 id="sm-about-title" class="sm-about-section__title">What is a Native Teacher?</h2>
+      <h2 id="sm-about-title" class="sm-about-section__title">The Role of a Native English Teacher</h2>
     </header>
     <div class="sm-about-grid">
       <article class="sm-about-card">
@@ -20,7 +20,7 @@ include __DIR__ . '/includes/header.php';
           <?php echo ku_image('images/whats_native-01.jpg', '子どもとスタッフの様子'); ?>
         </div>
         <div class="sm-about-card__body">
-          <h3 class="sm-about-card__title">A rewarding role where you can celebrate every child’s “I did it!” moment</h3>
+          <h3 class="sm-about-card__title">A rewarding role where you can celebrate each child’s “I did it!” moments</h3>
           <span class="sm-about-card__divider" aria-hidden="true"></span>
           <p class="sm-about-card__text">Through daily lessons, you can clearly see children’s growth and their increasing understanding of English. Sharing their small successes and progress brings a deep sense of fulfillment.</p>
         </div>
@@ -30,9 +30,9 @@ include __DIR__ . '/includes/header.php';
           <?php echo ku_image('images/whats_native-02.jpg', 'グローバルな環境で働くスタッフの様子'); ?>
         </div>
         <div class="sm-about-card__body">
-          <h3 class="sm-about-card__title">Use your English in a truly global educational environment</h3>
+          <h3 class="sm-about-card__title">Work in a truly global educational environment</h3>
           <span class="sm-about-card__divider" aria-hidden="true"></span>
-          <p class="sm-about-card__text">You will work alongside bilingual staff and international team members, experiencing diverse perspectives while using your native English skills to the fullest.</p>
+          <p class="sm-about-card__text">Join a diverse team of bilingual educators and international staff while sharing language, culture, and ideas with the children every day.</p>
         </div>
       </article>
       <article class="sm-about-card">
@@ -40,9 +40,9 @@ include __DIR__ . '/includes/header.php';
           <?php echo ku_image('images/whats_native-03.jpg', 'キャリアアップの機会に関するイメージ'); ?>
         </div>
         <div class="sm-about-card__body">
-          <h3 class="sm-about-card__title">An environment where you can grow your teaching skills and career</h3>
+          <h3 class="sm-about-card__title">A setting where you can grow your teaching skills and career</h3>
           <span class="sm-about-card__divider" aria-hidden="true"></span>
-          <p class="sm-about-card__text">You can develop as an educator through lesson delivery, curriculum involvement with future career paths in the Training Team or Curriculum Team.</p>
+          <p class="sm-about-card__text">You can develop as an educator through lesson delivery and curriculum involvement, with future career paths in the Training Team or Curriculum Team, as well as opportunities to become a 正社員 seishain (full-time, non contracted).</p>
         </div>
       </article>
     </div>
@@ -94,7 +94,7 @@ include __DIR__ . '/includes/header.php';
                 <?php echo ku_image('images/schedule_03.jpg', 'Daily activity'); ?>
               </div>
               <div class="sm-schedule-item__text">
-                <p>Each day includes a variety of activities such as physical play, arts and crafts, and simple science experiments. Through play-based learning, children naturally experience authentic English while enjoying hands-on activities in a lively and supportive environment.</p>
+                <p>Each day includes a variety of activities such as exercise, arts and crafts, and simple science experiments. Through play-based learning, children naturally experience authentic English while enjoying hands-on activities in a lively and supportive environment.</p>
               </div>
             </div>
           </article>
@@ -437,7 +437,7 @@ include __DIR__ . '/includes/header.php';
 
     <div class="sm-interview-feature">
       <div class="sm-interview-feature__copy">
-        <h3 class="sm-interview-feature__lead">グローバルな環境の中で英語を日常的に使いながら、自分自身も成長し続けられる点が魅力です！</h3>
+        <h3 class="sm-interview-feature__lead">Grow as a professional educator while shaping our students' future.</h3>
         <div class="sm-interview-feature__meta">
           <span class="sm-interview-feature__meta-line" aria-hidden="true"></span>
           <p class="sm-interview-feature__meta-text">Native Teacher<br>Joined in 2023</p>
@@ -459,7 +459,7 @@ include __DIR__ . '/includes/header.php';
         'text' => 'One of the challenges is adapting teaching methods to different age groups and individual personalities.<br>Each child learns differently, so it requires observation, flexibility, and strong classroom management skills.<br>However, this is also what makes the job highly rewarding.<br>Seeing children become more independent, confident, and engaged in learning over time gives me a strong sense of purpose as an educator.<br>Compared to my previous roles, I feel that I am developing more practical teaching skills, including lesson facilitation, behavior management, and student engagement strategies.',
       ],
       [
-        'title' => 'What would you like to challenge in the future?',
+        'title' => 'Any new goals that you would like to work towards to?',
         'text' => 'Going forward, I would like to further refine my teaching strategies and take on a mentoring role for newer teachers.<br>I am particularly interested in becoming an OJT trainer and contributing to teacher development and program quality.<br>In the long term, I hope to be involved not only in teaching but also in curriculum improvement and educational program development.',
       ],
     ];
@@ -494,7 +494,7 @@ include __DIR__ . '/includes/header.php';
         'num' => '01',
         'title' => 'Application',
         'icon' => 'images/flow_01.png',
-        'text_html' => 'Please apply easily by clicking the “Apply” button.<br>We look forward to receiving your application through the KidsUP website.',
+        'text_html' => 'Please apply by clicking the “Apply” button.<br>We look forward to receiving your application through the KidsUP website.',
       ],
       [
         'num' => '02',
@@ -548,7 +548,7 @@ include __DIR__ . '/includes/header.php';
     $sm_faq_items = [
       [
         'q' => 'Can I apply even if I don’t have formal teaching experience?',
-        'a_html' => 'Yes. While teaching experience is welcome, it is not required.<br>We provide comprehensive training and classroom support to help you develop the skills needed to work confidently with children.',
+        'a_html' => 'Yes. While teaching experience is welcomed, it is not required.<br>We provide comprehensive training and classroom support to help you develop the skills needed to work confidently with children.',
       ],
       [
         'q' => 'What qualifications are you looking for?',

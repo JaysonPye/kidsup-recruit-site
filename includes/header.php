@@ -214,6 +214,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</button>
 				<nav id="nav-top" class="ku-nav" aria-label="メインナビゲーション">
 					<ul class="ku-nav__list">
+						<li><a href="index.php">メインページ</a></li>
 						<li><a class="ku-nav-break" href="school-manager.php">スクール<br>マネージャー</a></li>
 						<li><a class="ku-nav-break" href="bilingual-educator.php">バイリンガル<br>エデュケーター</a></li>
 						<li><a class="ku-nav-break" href="native-educator.php">Native<br>Educator</a></li>
@@ -224,7 +225,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								<li><a href="bus-driver.php">バスドライバー</a></li>
 							</ul>
 						</li>
-						<li><a href="index.php">メインページ</a></li>
 						<li><a class="ku-cta" href="<?php echo esc_url($apply_cta_href); ?>" aria-label="<?php echo esc_attr($apply_cta_aria_label); ?>">応募はこちら</a></li>
 					</ul>
 				</nav>

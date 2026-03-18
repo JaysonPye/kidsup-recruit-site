@@ -730,6 +730,27 @@ body.nav-open {
 }
 
 @media (min-width: 769px) {
+  .page-bus-staff .page-top__content,
+  .page-bus-driver .page-top__content {
+    max-width: min(56%, 720px);
+    bottom: clamp(10px, 2vw, 28px);
+    transform: none;
+  }
+
+  .page-bus-staff .page-top__title span:first-child,
+  .page-bus-driver .page-top__title span:first-child {
+    font-size: clamp(2rem, 1.3vw + 1.4rem, 2.7rem);
+    line-height: 1.15;
+    margin-bottom: clamp(16px, 1.6vw, 24px);
+  }
+
+  .page-bus-staff .page-top__title span:last-child,
+  .page-bus-driver .page-top__title span:last-child {
+    font-size: clamp(1rem, 0.5vw + 0.82rem, 1.28rem);
+    line-height: 1.5;
+    top: clamp(28px, 3.6vw, 52px);
+  }
+
   .page-bus-staff .page-top__image,
   .page-bus-driver .page-top__image {
     display: flex;
@@ -1174,7 +1195,7 @@ body.nav-open {
 }
 
 .stats-header__image {
-  width: min(95px, 27vw);
+  width: min(145px, 30vw);
   height: auto;
   display: block;
 }
@@ -1185,6 +1206,10 @@ body.nav-open {
   top: 82%;
   transform: translateY(-50%);
   color: var(--ku-orange);
+}
+
+.sm-attractive-card__note--shift-right {
+  padding-left: 2ch;
 }
 
 @media (min-width: 769px) {
@@ -1204,7 +1229,7 @@ body.nav-open {
 
 .stats-header__title {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
   white-space: nowrap;
@@ -1212,7 +1237,7 @@ body.nav-open {
 
 .stats-header__meta {
   margin: 4px 0 0;
-  font-size: 0.85rem;
+  font-size: 1.14rem;
   font-weight: 400;
   white-space: nowrap;
 }
@@ -1294,6 +1319,7 @@ body.nav-open {
   position: absolute;
   left: 0.875rem;
   bottom: 0.75rem;
+  padding-bottom: 1rem;
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -1336,10 +1362,27 @@ body.nav-open {
   border: 1px solid #e7e1d8;
 }
 
+.recruit-card__media-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.recruit-card__media-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.12);
+  opacity: 0;
+  transition: opacity 0.24s ease;
+  pointer-events: none;
+}
+
 .recruit-card__media img {
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.24s ease, opacity 0.24s ease;
 }
 
 .recruit-card__body {
@@ -1379,6 +1422,23 @@ body.nav-open {
 
 .recruit-card__more:hover {
   opacity: 0.75;
+}
+
+.recruit-card__media-link:hover::after,
+.recruit-card__media-link:focus-visible::after {
+  opacity: 1;
+}
+
+.recruit-card__media-link:hover img,
+.recruit-card__media-link:focus-visible img {
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
+.recruit-card__media-link:focus-visible,
+.recruit-card__more:focus-visible {
+  outline: 2px solid #f4811f;
+  outline-offset: 3px;
 }
 
 @media (max-width: 900px) {
@@ -1500,6 +1560,7 @@ body.nav-open {
   .interview-panel__overlay {
     left: 0.625rem;
     bottom: 0.625rem;
+    padding-bottom: 0.8rem;
     font-size: 0.74rem;
   }
 

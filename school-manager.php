@@ -40,7 +40,7 @@ include __DIR__ . '/includes/header.php';
           <?php echo ku_image('images/whats_sm-03.jpg', 'キャリアアップの機会に関するイメージ'); ?>
         </div>
         <div class="sm-about-card__body">
-          <h3 class="sm-about-card__title">裁量が大きくキャリアアップの<br>チャンスも多い</h3>
+          <h3 class="sm-about-card__title">成長し続けられるキャリア</h3>
           <span class="sm-about-card__divider" aria-hidden="true"></span>
           <p class="sm-about-card__text">自分の裁量でチームをリードしながら、エリアマネージャーや統括責任者、本部スタッフなど、多彩なキャリアアップのチャンスもあります。</p>
         </div>
@@ -107,7 +107,7 @@ include __DIR__ . '/includes/header.php';
             </div>
           </article>
           <article class="sm-schedule-item sm-schedule-item--image-right">
-            <p class="sm-schedule-item__time">16:30</p>
+            <p class="sm-schedule-item__time">18:30</p>
             <span class="sm-schedule-item__time-divider" aria-hidden="true"></span>
             <h3 class="sm-schedule-item__heading">生徒帰宅</h3>
             <div class="sm-schedule-item__content">
@@ -157,7 +157,7 @@ include __DIR__ . '/includes/header.php';
         'num' => '01',
         'image' => 'images/hr_01.jpg',
         'alt' => '子どもたちとスタッフの様子',
-        'html' => "子どもたちの成長に寄り添い<br>笑顔を生み出す仕事に<br>挑戦したい方",
+        'html' => "子どもたちの成長に寄り添い<br>笑顔を生み出す仕事に挑戦したい方",
       ],
       [
         'num' => '02',
@@ -261,6 +261,7 @@ include __DIR__ . '/includes/header.php';
             <span class="sm-attractive-card__suffix">%</span>
           </p>
           <p class="sm-attractive-card__note">※2024年度実績</p>
+          <p class="sm-attractive-card__note sm-attractive-card__note--shift-right">※男女ともに100%</p>
         </div>
       </article>
     </div>
@@ -289,7 +290,7 @@ include __DIR__ . '/includes/header.php';
           <p class="sm-job-desc-text">月給25.5万円～45万円＋賞与年2回＋交通費(当社<span class="only_mb_only" aria-hidden="true"></span>規定あり)＋各種手当＋昇給年1回</p>
           <p class="sm-job-desc-text sm-job-desc-text--lead">■一般職 (アシスタントスクールマネージャー)</p>
           <p class="sm-job-desc-text">月給22.6万円～28.5万円＋賞与年2回＋交通費 (当社規定あり)<span class="only_mb_only" aria-hidden="true"></span>＋各種手当＋昇給年1回</p>
-          <p class="sm-job-desc-text sm-job-desc-text--em">◎その他、特別インセンティブやMVP制度もあります！<span class="only_mb_only" aria-hidden="true"></span>MVP制度もあります！</p>
+          <p class="sm-job-desc-text sm-job-desc-text--em">◎その他、特別インセンティブやMVP制度もあります！<span class="only_mb_only" aria-hidden="true"></span></p>
           <p class="sm-job-desc-note">※経験やスキルを考慮の上、当社規定により優遇<span class="only_mb_only" aria-hidden="true"></span>いたします</p>
           <p class="sm-job-desc-note">※残業代は全額支給いたします</p>
           <p class="sm-job-desc-note">※試用期間中は賞与評価期間対象外となります</p>
@@ -298,7 +299,7 @@ include __DIR__ . '/includes/header.php';
 
       <div class="sm-job-desc-row">
         <dt class="sm-job-desc-row__label">昇給・賞与</dt>
-        <dd class="sm-job-desc-row__value">◎昇給／年1回　◎賞与／年2回</dd>
+        <dd class="sm-job-desc-row__value">◎昇給／年1回　◎賞与／年2回　※評価に基づきます</dd>
       </div>
 
       <div class="sm-job-desc-row">

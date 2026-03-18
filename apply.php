@@ -37,12 +37,11 @@ include __DIR__ . '/includes/header.php';
             </label>
             <select id="apply-role" name="role" required>
               <option value="">職種を選択してください</option>
-              <option value="sm">SM / スクールマネージャー</option>
-              <option value="bilingual">バイリンガル</option>
-              <option value="native">Native</option>
-              <option value="driver">ドライバー</option>
-              <option value="tour_staff">添乗員</option>
-              <option value="new_graduate">新卒</option>
+              <option value="sm">スクールマネージャー</option>
+              <option value="bilingual">バイリンガルエデュケーター</option>
+              <option value="native">Native Educator</option>
+              <option value="tour_staff">バス添乗員</option>
+              <option value="driver">バスドライバー</option>
             </select>
           </div>
 
@@ -80,8 +79,8 @@ include __DIR__ . '/includes/header.php';
           </div>
 
           <div class="apply-field">
-            <label for="apply-gender">性別 (Gender)</label>
-            <select id="apply-gender" name="gender">
+            <label for="apply-gender">性別 (Gender) <span class="apply-required">※必須</span></label>
+            <select id="apply-gender" name="gender" required>
               <option value="">指定なし (Not specified)</option>
               <option value="Male">男性 (Male)</option>
               <option value="Female">女性 (Female)</option>
@@ -89,8 +88,8 @@ include __DIR__ . '/includes/header.php';
           </div>
 
           <div class="apply-field">
-            <label for="apply-nationality">国籍 (Nationality)</label>
-            <input id="apply-nationality" name="nationality" type="text" autocomplete="country-name">
+            <label for="apply-nationality">国籍 (Nationality) <span class="apply-required">※必須</span></label>
+            <input id="apply-nationality" name="nationality" type="text" autocomplete="country-name" required>
           </div>
 
           <div class="apply-field apply-field--full">
@@ -109,7 +108,7 @@ include __DIR__ . '/includes/header.php';
           </div>
 
           <div class="apply-field js-native-only" hidden>
-            <label for="apply-work-visa-status">Do you currently hold a valid work visa?</label>
+            <label for="apply-work-visa-status">Do you currently hold a valid work visa? <span class="apply-required">※必須</span></label>
             <select id="apply-work-visa-status" name="work_visa_status">
               <option value="">Select</option>
               <option value="Yes">Yes</option>
@@ -151,7 +150,7 @@ include __DIR__ . '/includes/header.php';
         </p>
         <p class="apply-success__en">
           Thank you for your application.<br>
-          We will carefully review the applications and contact those who will proceed in our hiring process.
+          We will carefully review the forms and contact only those who passed the first round of selection.
         </p>
       </section>
     </div>

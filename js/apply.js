@@ -11,6 +11,7 @@
   var successBox = document.getElementById('apply-success-box');
   var trackingSlugInput = document.getElementById('tracking-link-slug');
   var nativeOnlyRows = form.querySelectorAll('.js-native-only');
+  var workVisaStatusInput = document.getElementById('apply-work-visa-status');
   var applySection = document.getElementById('apply-form');
 
   var API_ENDPOINT = form.dataset.apiEndpoint || '/api/recruit_applications';
@@ -94,9 +95,14 @@
       if (!enabled) {
         row.querySelectorAll('input, select, textarea').forEach(function(input) {
           input.value = '';
+          input.required = false;
         });
       }
     });
+
+    if (workVisaStatusInput) {
+      workVisaStatusInput.required = enabled;
+    }
   }
 
   function setError(messages) {
