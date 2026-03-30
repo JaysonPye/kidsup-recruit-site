@@ -91,7 +91,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">Daily Activity</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <?php echo ku_image('images/schedule_03.jpg', 'アクティビティの様子'); ?>
+                <?php echo ku_image('images/bilingual-schedule_03.jpg', 'アクティビティの様子'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>運動や工作、簡単なサイエンス実験など、日によってさまざまな活動を行います。子どもたちは遊びを楽しみながら、自然と英語に触れ、学んでいきます。毎日の活動を通して、「楽しい！」という気持ちを大切にしながら、一緒に過ごします。</p>
@@ -104,7 +104,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">イングリッシュクラス</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <?php echo ku_image('images/schedule_04.jpg', 'イングリッシュクラスの様子'); ?>
+                <?php echo ku_image('images/bilingual-schedule_04.jpg', 'イングリッシュクラスの様子'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>リーディング・ライティング・スピーキング・リスニングの4技能をバランスよく伸ばすレッスンを行います。テキストを使用し、実用的な文法やコミュニケーション表現を指導します。明確なステップのあるカリキュラムにより、楽しい参加型の授業を実施します。</p>
@@ -117,7 +117,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">生徒帰宅</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <?php echo ku_image('images/schedule_05.jpg', '生徒帰宅時の様子'); ?>
+                <?php echo ku_image('images/bilingual-schedule_05.jpg', '生徒帰宅時の様子'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>保護者のお迎えや帰りの送迎バスが出発。</p>
@@ -132,7 +132,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">退勤</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <?php echo ku_image('images/schedule_05.jpg', '退勤時の様子'); ?>
+                <?php echo ku_image('images/native-schedule_06.jpg', '退勤時の様子'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>平均残業は月3時間とほぼなし。持ち帰り仕事もないため、仕事後はしっかりリフレッシュできます。</p>
@@ -177,13 +177,13 @@ include __DIR__ . '/includes/header.php';
       ],
       [
         'num' => '04',
-        'image' => 'images/hr_04.jpg',
+        'image' => 'images/bilingual-hr_04.jpg',
         'alt' => 'スタッフ集合写真',
         'html' => "子どもと関わることが好きで、<br>一人ひとりに向き合った<br>丁寧な対応ができる方",
       ],
       [
         'num' => '05',
-        'image' => 'images/hr_05.jpg',
+        'image' => 'images/native-hr_05.jpg',
         'alt' => '子どもとスタッフの学びの様子',
         'html' => "教育や保育、英語教育に興味があり、<br>長期的にキャリアを築いていきたい方",
       ],
