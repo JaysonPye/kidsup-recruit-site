@@ -65,7 +65,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">出勤</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <?php echo ku_image('images/schedule_01.jpg', '出勤時の様子'); ?>
+                <?php echo ku_image('images/native-schedule_01.jpg', '出勤時の様子'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>朝のミーティングを英語で行い、1日のスタートから英語に囲まれた環境です。子どもたちが来る前に、生徒の様子を共有したり、レッスン準備をしたりと、チームで協力しながら楽しく準備を進めます。</p>

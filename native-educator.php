@@ -65,7 +65,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">Start of the Day</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <?php echo ku_image('images/schedule_01.jpg', 'Start of the day'); ?>
+                <?php echo ku_image('images/native-schedule_01.jpg', 'Start of the day'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>The day begins with a team meeting where teachers connect, share student updates, and prepare for lessons together. Before the children arrive, we collaborate as a team to create a fun and engaging learning experience for the day.</p>
@@ -91,7 +91,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">Daily Activity</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <?php echo ku_image('images/schedule_03.jpg', 'Daily activity'); ?>
+                <?php echo ku_image('images/native-schedule_03.jpg', 'Daily activity'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>Each day includes a variety of activities such as exercise, arts and crafts, and simple science experiments. Through play-based learning, children naturally experience authentic English while enjoying hands-on activities in a lively and supportive environment.</p>
@@ -104,7 +104,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">English Class</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <?php echo ku_image('images/schedule_04.jpg', 'English class'); ?>
+                <?php echo ku_image('images/native-schedule_04.jpg', 'English class'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>Teachers lead structured, interactive lessons that develop the four core skills: reading, writing, speaking, and listening. Using curriculum materials and engaging activities, you help children build practical communication skills in a fun and meaningful way.</p>
@@ -117,7 +117,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">Advanced Class Begins</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <?php echo ku_image('images/schedule_05.jpg', 'Advanced class begins'); ?>
+                <?php echo ku_image('images/native-schedule_05.jpg', 'Advanced class begins'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>For more proficient students, teachers provide focused lessons to further develop their language abilities. With smaller class sizes, you can give more individualized attention and support each child’s progress.</p>
@@ -130,7 +130,7 @@ include __DIR__ . '/includes/header.php';
             <h3 class="sm-schedule-item__heading">End of the Day</h3>
             <div class="sm-schedule-item__content">
               <div class="sm-schedule-item__media">
-                <?php echo ku_image('images/schedule_05.jpg', 'End of the day'); ?>
+                <?php echo ku_image('images/native-schedule_06.jpg', 'End of the day'); ?>
               </div>
               <div class="sm-schedule-item__text">
                 <p>Overtime is minimal (around three hours per month on average), and there is no take-home work. This allows teachers to maintain a healthy work-life balance and fully recharge after the day.</p>
@@ -175,13 +175,13 @@ include __DIR__ . '/includes/header.php';
       ],
       [
         'num' => '04',
-        'image' => 'images/hr_04.jpg',
+        'image' => 'images/native-hr_04.jpg',
         'alt' => 'スタッフ集合写真',
         'html' => "Those who genuinely enjoy working with children and can give thoughtful, individualized attention",
       ],
       [
         'num' => '05',
-        'image' => 'images/hr_05.jpg',
+        'image' => 'images/native-hr_05.jpg',
         'alt' => '子どもとスタッフの学びの様子',
         'html' => "Those who are interested in building a long-term career in education",
       ],
