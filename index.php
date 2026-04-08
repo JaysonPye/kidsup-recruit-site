@@ -89,7 +89,7 @@ include __DIR__ . '/includes/header.php';
             <img class="stats-header__image" src="images/02.png" alt="02">
             <div class="stats-header__text">
               <p class="stats-header__title">スクール数</p>
-              <p class="stats-header__meta">スクール数：37校（2025年11月時点）</p>
+              <p class="stats-header__meta">スクール数：37校（2026年2月時点）</p>
             </div>
           </div>
         </div>
