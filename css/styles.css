@@ -1651,7 +1651,7 @@ body.nav-open {
   justify-content: center;
   align-items: center;
   gap: 8px;
-  width: 100vw;
+  width: 100%;
   margin: 24px 0 34px;
   margin-left: calc(-1 * var(--sm-interview-left-pad));
   padding: 0;
@@ -2829,10 +2829,6 @@ body.nav-open {
 }
 
 @media (max-width: 600px) {
-  .interview-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
   .interview-panel--text {
     padding: 0.75rem;
   }

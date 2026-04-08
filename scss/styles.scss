@@ -1685,10 +1685,6 @@ body.nav-open {
 }
 
 @media (max-width: 600px) {
-  .interview-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
   .interview-panel--text {
     padding: 0.75rem;
   }
