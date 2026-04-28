@@ -1,5 +1,6 @@
 node_modules/
 dist/
+kidsup-recruit-site
 *.log
 .env
 .env.*
