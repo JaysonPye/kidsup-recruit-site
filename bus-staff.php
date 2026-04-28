@@ -162,7 +162,7 @@ include __DIR__ . '/includes/header.php';
 <section class="sm-faq-section" aria-labelledby="bus-staff-apply-title">
   <div class="ku-section__inner">
     <div class="sm-faq-section__cta">
-      <a class="sm-faq-section__apply" href="https://docs.google.com/forms/d/e/1FAIpQLSebQukpmH3EfPj6RRpiZXbm8aAOdbynZibE2N21TM6F-2_aeg/viewform" target="_blank" rel="noopener noreferrer">応募はこちら</a>
+      <a class="sm-faq-section__apply" href="apply.php?role=tour_staff">応募はこちら</a>
     </div>
   </div>
 </section>

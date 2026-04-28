@@ -9,6 +9,7 @@ $page_top_cta_label = 'フォームへ';
 $page_top_cta_href = '#apply-form';
 $recruit_api_endpoint = getenv('RECRUIT_API_ENDPOINT') ?: 'https://kids-up.app/api/recruit_applications';
 $privacy_policy_url = 'https://www.p-up.world/privacypolicy/';
+$thank_you_url = 'apply-thanks.php';
 include __DIR__ . '/includes/header.php';
 ?>
 <?php include __DIR__ . '/includes/page-top.php'; ?>
@@ -29,6 +30,7 @@ include __DIR__ . '/includes/header.php';
         novalidate
         data-api-endpoint="<?php echo esc_attr($recruit_api_endpoint); ?>"
         data-privacy-policy-url="<?php echo esc_attr($privacy_policy_url); ?>"
+        data-thank-you-url="<?php echo esc_attr($thank_you_url); ?>"
       >
         <div class="apply-form__grid">
           <div class="apply-field apply-field--full">
@@ -141,18 +143,6 @@ include __DIR__ . '/includes/header.php';
           <button id="apply-submit-button" type="submit" class="apply-submit">応募する / Submit</button>
         </div>
       </form>
-
-      <section id="apply-success-box" class="apply-success" hidden>
-        <h2 class="apply-success__title">ご応募ありがとうございました。</h2>
-        <p class="apply-success__ja">
-          内容を確認のうえ、次のステップに進んでいただく方にのみご連絡させていただきます。<br>
-          あらかじめご了承ください。
-        </p>
-        <p class="apply-success__en">
-          Thank you for your application.<br>
-          We will carefully review the forms and contact only those who passed the first round of selection.
-        </p>
-      </section>
     </div>
   </div>
 </section>

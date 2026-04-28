@@ -8,7 +8,6 @@
   var dateOfBirthInput = document.getElementById('apply-date-of-birth');
   var submitButton = document.getElementById('apply-submit-button');
   var errorBox = document.getElementById('apply-error-box');
-  var successBox = document.getElementById('apply-success-box');
   var trackingSlugInput = document.getElementById('tracking-link-slug');
   var nativeOnlyRows = form.querySelectorAll('.js-native-only');
   var workVisaStatusInput = document.getElementById('apply-work-visa-status');
@@ -16,6 +15,7 @@
 
   var API_ENDPOINT = form.dataset.apiEndpoint || '/api/recruit_applications';
   var PRIVACY_POLICY_URL = form.dataset.privacyPolicyUrl || 'https://www.p-up.world/privacypolicy/';
+  var THANK_YOU_URL = form.dataset.thankYouUrl || 'apply-thanks.php';
 
   function normalizeRole(value) {
     if (!value) {
@@ -302,20 +302,7 @@
       }
 
       if (response.ok && json.status === 200) {
-        var thankYouJa = json.thank_you && json.thank_you.ja;
-        var thankYouEn = json.thank_you && json.thank_you.en;
-        var jaEl = successBox.querySelector('.apply-success__ja');
-        var enEl = successBox.querySelector('.apply-success__en');
-        if (thankYouJa && jaEl) {
-          jaEl.textContent = thankYouJa;
-        }
-        if (thankYouEn && enEl) {
-          enEl.textContent = thankYouEn;
-        }
-
-        form.hidden = true;
-        successBox.hidden = false;
-        successBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.location.assign(THANK_YOU_URL);
         return;
       }
 
