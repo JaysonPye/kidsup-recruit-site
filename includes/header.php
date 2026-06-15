@@ -20,8 +20,9 @@ if (!isset($post) || !is_object($post)) {
 
 if (!function_exists('home_url')) {
   function home_url($path = '/') {
+    $base = 'https://kids-up.jp/';
     $clean = ltrim($path, '/');
-    return './' . ($clean !== '' ? $clean : '');
+    return $base . ($clean !== '' ? $clean : '');
   }
 }
 if (!function_exists('get_template_directory_uri')) {

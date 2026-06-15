@@ -66,6 +66,69 @@ $(function(){
 });
 
 $(function() {
+	var $bar = $('[data-mobile-apply-cta]');
+
+	if (!$bar.length) {
+		return;
+	}
+
+	$('body').addClass('has-mobile-apply-cta');
+
+	var mobileMq = window.matchMedia('(max-width: 768px)');
+	var $heroContent = $('.page-top__content');
+	var $heroCta = $('.page-top__cta');
+	var $window = $(window);
+	var ticking = false;
+
+	function isVisibleInViewport($element) {
+		if (!$element.length) {
+			return false;
+		}
+
+		var rect = $element[0].getBoundingClientRect();
+		var headerHeight = $('.ku-header').outerHeight() || 0;
+		var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+		return rect.bottom > headerHeight + 8 && rect.top < viewportHeight - 8;
+	}
+
+	function updateMobileApplyCta() {
+		ticking = false;
+
+		if (!mobileMq.matches) {
+			$('body').removeClass('mobile-apply-cta-visible');
+			$bar.attr('aria-hidden', 'true');
+			return;
+		}
+
+		var heroAreaVisible = isVisibleInViewport($heroContent) || isVisibleInViewport($heroCta);
+		var shouldShow = !heroAreaVisible && $window.scrollTop() > 120;
+
+		$('body').toggleClass('mobile-apply-cta-visible', shouldShow);
+		$bar.attr('aria-hidden', shouldShow ? 'false' : 'true');
+	}
+
+	function requestUpdate() {
+		if (ticking) {
+			return;
+		}
+
+		ticking = true;
+		window.requestAnimationFrame(updateMobileApplyCta);
+	}
+
+	$window.on('scroll resize orientationchange', requestUpdate);
+
+	if (mobileMq.addEventListener) {
+		mobileMq.addEventListener('change', requestUpdate);
+	} else if (mobileMq.addListener) {
+		mobileMq.addListener(requestUpdate);
+	}
+
+	requestUpdate();
+});
+
+$(function() {
 	var $submenuToggle = $('.ku-submenu-toggle');
 
 	$submenuToggle.on('click', function(event) {

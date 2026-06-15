@@ -324,6 +324,10 @@ ul {
   box-shadow: none;
 }
 
+.mobile-apply-cta {
+  display: none;
+}
+
 .ku-nav-toggle {
   display: none;
   align-items: center;
@@ -2094,6 +2098,97 @@ body.nav-open {
   .page-top {
     --page-top-cta-size: 80px;
     padding: 0;
+  }
+
+  .mobile-apply-cta {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 940;
+    display: grid;
+    grid-template-columns: 30px minmax(0, 1fr) 28px;
+    align-items: center;
+    gap: 9px;
+    min-height: 48px;
+    padding: 7px 13px calc(7px + env(safe-area-inset-bottom));
+    background: $kidsup-orange;
+    border-top: 1px solid rgba(255, 255, 255, 0.28);
+    box-shadow: 0 -10px 24px rgba(57, 33, 11, 0.22);
+    color: #fff;
+    font-family: "Noto Sans JP", "Noto Sans", sans-serif;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(100%);
+    transition:
+      opacity 0.22s ease,
+      transform 0.22s ease,
+      visibility 0.22s ease;
+  }
+
+  body.mobile-apply-cta-visible:not(.nav-open) .mobile-apply-cta {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .mobile-apply-cta:visited,
+  .mobile-apply-cta:hover {
+    color: #fff;
+  }
+
+  .mobile-apply-cta__body {
+    min-width: 0;
+  }
+
+  .mobile-apply-cta__icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .mobile-apply-cta__icon img {
+    width: 19px;
+    height: 19px;
+    display: block;
+  }
+
+  .mobile-apply-cta__text {
+    margin: 0;
+    font-size: clamp(0.86rem, 3.5vw, 1rem);
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: 0;
+  }
+
+  .mobile-apply-cta__subtext {
+    margin: 2px 0 0;
+    font-size: clamp(0.58rem, 2.45vw, 0.68rem);
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: 0;
+    opacity: 0.92;
+  }
+
+  .mobile-apply-cta__arrow {
+    justify-self: center;
+    width: 12px;
+    height: 12px;
+    border-top: 4px solid currentColor;
+    border-right: 4px solid currentColor;
+    transform: rotate(45deg);
+  }
+
+  body.has-mobile-apply-cta #footer {
+    padding-bottom: calc(66px + env(safe-area-inset-bottom));
   }
 
   .page-top__content {

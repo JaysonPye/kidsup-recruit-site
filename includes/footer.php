@@ -30,7 +30,6 @@
 		<li class="menu-item"><a href="<?php echo esc_url( home_url( '/course/kindy/' ) ); ?>">KINDY(幼児コース)</a></li>
 		<li class="menu-item"><a href="<?php echo esc_url( home_url( '/course/elementary/' ) ); ?>">ELEMENTARY（学童コース）</a></li>
 		<li class="menu-item"><a href="<?php echo esc_url( home_url( '/course/specialist/' ) ); ?>">SPECIALIST（上級者コース）</a></li>
-		<li class="menu-item"><a href="<?php echo esc_url( home_url( '/course/online/' ) ); ?>">ONLINE(オンラインコース)</a></li>
 		<li class="menu-item"><a href="<?php echo esc_url( home_url( '/category/follow-your-dreams/' ) ); ?>">Follow Your Dreams!</a></li>
 		<li class="menu-item"><a href="<?php echo esc_url( home_url( '/school/' ) ); ?>">スクール案内</a></li>
 		<li class="menu-item"><a href="<?php echo esc_url( home_url( '/achievement/' ) ); ?>">成長の様子</a></li>
@@ -78,6 +77,25 @@
 
 
 				</section><!-- end footer-->				
+
+<?php
+$mobile_apply_cta_hidden = !empty($hide_mobile_apply_cta)
+	|| strpos($body_class ?? '', 'page-apply') !== false
+	|| in_array($body_id ?? '', ['apply', 'apply-thanks'], true);
+$mobile_apply_cta_href = $apply_cta_href ?? 'apply.php';
+?>
+<?php if (!$mobile_apply_cta_hidden): ?>
+				<a class="mobile-apply-cta" data-mobile-apply-cta href="<?php echo esc_url($mobile_apply_cta_href); ?>" aria-label="応募フォームへ" aria-hidden="true">
+					<span class="mobile-apply-cta__icon" aria-hidden="true">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/note.svg" alt="" width="24" height="24" loading="lazy" decoding="async">
+					</span>
+					<div class="mobile-apply-cta__body">
+						<p class="mobile-apply-cta__text">今すぐ対応する</p>
+						<p class="mobile-apply-cta__subtext">未来の子どもたちのために、あなたの力を。</p>
+					</div>
+					<span class="mobile-apply-cta__arrow" aria-hidden="true"></span>
+				</a>
+<?php endif; ?>
 
 			</main>
 			</div><!-- end cp_content-->
