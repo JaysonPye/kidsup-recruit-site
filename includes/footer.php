@@ -90,7 +90,7 @@ $mobile_apply_cta_href = $apply_cta_href ?? 'apply.php';
 						<img src="<?php echo get_template_directory_uri(); ?>/images/note.svg" alt="" width="24" height="24" loading="lazy" decoding="async">
 					</span>
 					<div class="mobile-apply-cta__body">
-						<p class="mobile-apply-cta__text">今すぐ対応する</p>
+						<p class="mobile-apply-cta__text">今すぐ応募する</p>
 						<p class="mobile-apply-cta__subtext">未来の子どもたちのために、あなたの力を。</p>
 					</div>
 					<span class="mobile-apply-cta__arrow" aria-hidden="true"></span>
