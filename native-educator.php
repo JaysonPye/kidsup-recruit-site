@@ -287,7 +287,7 @@ include __DIR__ . '/includes/header.php';
       <div class="sm-job-desc-row sm-job-desc-row--salary">
         <dt class="sm-job-desc-row__label">Salary</dt>
         <dd class="sm-job-desc-row__value">
-          <p class="sm-job-desc-text">262,000yen~</p>
+          <p class="sm-job-desc-text">267,000yen~</p>
         </dd>
       </div>
 

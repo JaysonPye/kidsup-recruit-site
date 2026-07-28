@@ -287,9 +287,9 @@ include __DIR__ . '/includes/header.php';
         <dt class="sm-job-desc-row__label">給与</dt>
         <dd class="sm-job-desc-row__value">
           <p class="sm-job-desc-text sm-job-desc-text--lead">■総合職(スクールマネージャー)</p>
-          <p class="sm-job-desc-text">月給25.5万円～45万円＋賞与年2回＋交通費(当社<span class="only_mb_only" aria-hidden="true"></span>規定あり)＋各種手当＋昇給年1回</p>
+          <p class="sm-job-desc-text">月給26.5万円～45万円＋賞与年2回＋交通費(当社<span class="only_mb_only" aria-hidden="true"></span>規定あり)＋各種手当＋昇給年1回</p>
           <p class="sm-job-desc-text sm-job-desc-text--lead">■一般職 (アシスタントスクールマネージャー)</p>
-          <p class="sm-job-desc-text">月給22.6万円～28.5万円＋賞与年2回＋交通費 (当社規定あり)<span class="only_mb_only" aria-hidden="true"></span>＋各種手当＋昇給年1回</p>
+          <p class="sm-job-desc-text">月給23.1万円～28.5万円＋賞与年2回＋交通費 (当社規定あり)<span class="only_mb_only" aria-hidden="true"></span>＋各種手当＋昇給年1回</p>
           <p class="sm-job-desc-text sm-job-desc-text--em">◎その他、特別インセンティブやMVP制度もあります！<span class="only_mb_only" aria-hidden="true"></span></p>
           <p class="sm-job-desc-note">※経験やスキルを考慮の上、当社規定により優遇<span class="only_mb_only" aria-hidden="true"></span>いたします</p>
           <p class="sm-job-desc-note">※残業代は全額支給いたします</p>

@@ -289,7 +289,7 @@ include __DIR__ . '/includes/header.php';
       <div class="sm-job-desc-row sm-job-desc-row--salary">
         <dt class="sm-job-desc-row__label">給与</dt>
         <dd class="sm-job-desc-row__value">
-          <p class="sm-job-desc-text">月給263,667円～356,000円＋諸手当＋交通費＋インセンティブ制度・決算賞与制度あり</p>
+          <p class="sm-job-desc-text">月給268,667円～356,000円＋諸手当＋交通費＋インセンティブ制度・決算賞与制度あり</p>
           <p class="sm-job-desc-note">-試用期間は３カ月間です。</p>
           <p class="sm-job-desc-note">-中途採用の場合、試用期間中は契約社員となります。</p>
           <p class="sm-job-desc-note">-中途採用は試用期間中、月給22万円～となります。</p>
